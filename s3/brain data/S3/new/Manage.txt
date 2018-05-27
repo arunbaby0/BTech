@@ -1,0 +1,533 @@
+ISO 
+
+             The international organization for standardization (ISO) was founded in 1946 in Geneva, switzerland.Its mandate is to promote the development of international standards to facilitate the exchange of goods and services world wide. The United States representative is the American national standards institute (ANSI).
+
+          
+                The ISO technical committee developed a series of five international standards for quality systems, which were first published in 1987 .By the adoption of ISO by the European community (EC) the standards have become universally accepted Government bodies through out the world including the united states are also using the standards .U.S government agencies using the series are the Department of Defense (DoD) and the Food and Drug Administration (FDA).
+
+WHAT IS THE PURPOSE OF ISO
+
+                   The purpose of these standards is to assist organizations of all types to implement and operate effective quality management systems.There are various reasons for implementing a quality system that conforms to an ISO standard .The primary reason is that customers or marketing are demanding compliance to a quality system.As more and more organizations are become registered, they require their subcontractors or suppliers to be registered.
+Most organizations have found that the system has led to:
+1. Fewer on site audits by customers.
+2. Increased market share.
+3. Improved quality.
+4. Greater awareness of quality by employees.
+5. A documented formal system.
+6. Reduced operating costs.
+
+ISO 9000 SERIES OF STANDARDS
+
+                   The ISO series of standards is generic in scope. By design the series can be tailored to fit any organization’s needs whether it is large or small , a manufacturer or a service organization . In very simplified form , the standards require an organization to say what it is doing to ensure quality, then to do what it says ,and finally document or prove that it has done what it said.
+
+           The five standards of the series are described briefly in the following paragraphs
+
+            ISO   9000,”Quality Management and Quality Assurance Standards Guidelines for selection and use,”explains fundamental quality concepts defines keyterms,and provides guidelines for selecting using and tailoring the ISO9001, 9002, and  9003 standards.
+
+            ISO 9001,”Quality Systems –Model for Quality Assurance in Design,Development ,Production Installation and Servicing .”is the most comprehensive standard in the series. It contains 20 elements covering the need for an effective quality system from the receipt of a contract through the design stage ,and finally the service required after delivery.
+
+           ISO 9002, “Quality Systems –Model for Quality Assurance in Production,Installation and Servicing,”addresses the prevention detection and correction of problems during production and installation
+   
+            ISO   9003,    “Quality Systems –Model for Quality Assurance in final Inspection  and Test ,”is the least comprehensive of the standards .It is not a quality control system. ISO9003 addresses only those requirements for the detection and control of problems found during final inspection and testing.
+
+             ISO     9004-1, “Quality Management and Quality System Elements –Guidelines,” provides guidance for a supplier to use in developing and implementing a quality system .It examines each of the elements in a greater detail .
+
+ISO 14000 SERIES OF STANDARDS
+
+             In1991, ISO formed the strategic advisory committee(SAGE)which led to the introduction of ISO 14000 SERIES STANDARDS .This standard provides organizations with the elements for an environmental management system(EMS).It describes the requirements for registration and/or self-declaration of the organization’s EMS. The are based on the process and not on the product. The overall aim of this standard is to support environmental protection and prevention of pollution in balance with socioeconomic needs. Many aspects of ISO14000are basically the same as ISO9000 For most part it is enough that we substitute the word environment for quality
+
+IMPLIMENTATION
+
+There are a number of steps that are necessary to implement a quality management system.
+
+1.Senior management commitment
+
+The most important step in implementing a quality system that will meet or exceed an ISO 9000 standard is to acquire the full support of upper management. The chief executive officer(CEO) must be willing to commit the resources necessary to achieve certification. This is critical to the success of the project. Without the CEO’s support, the process may continuously run into unnecessary roadblocks or even be doomed to failure.
+
+2.Appoint the Management Representative 
+
+Once the commitment has been made, the process can proceed by adopting a project team approach and treating it the same as any other business undertaking. The next step is the appointment of a management representative. This person is responsible for coordinating the implementation and maintenance of the quality system and is the contact person for all parties involved in the process, both internal and external. It is important to note that the quality manager does not have to be the representative. The implementation of the quality system should involve everyone in the organization. The standard requires the management representative be a person who is able to ensure that the quality system is effectively implemented and maintained irrespective of other responsibilities.
+
+
+
+3.Awareness
+
+           This step requires an awareness program. Because the process is going to affect members of the organization as well as require their input, it stands to reason that every one should understand the quality system. They should know how it would affect day-to-day operations and the potential benefits. This information can be relayed through short, one-hour awareness training sessions. 
+
+4.Appoint an Implementation Team
+
+              After everyone has been informed of the organization’s intentions to develop the quality system, an implementation team should be assembled. This team should be drawn from all levels and areas of the organizations.
+
+5.Training 
+
+            The implementation team, supervisors, and internal audit team should be trained. This activity can be accomplished by sending team leaders for training and having them train the other team members or by bringing the training in house for all team members through a one or two day seminar.
+
+6.Time schedule
+  This activity develops a time schedule for the implementation and registration of the
+ system. This time frame will vary, depending on the size and type of organization and
+the extent of its existing quality system. Most organizations can complete the entire process in less than 1.5 years.
+
+7.Select Element Owners
+ 
+         The implementation team selects owners for each of the system elements. Many of these owners will be members of the implementation team. Owners may be assigned more than one element. Each owner has the option of selecting a team to assist in the process. 
+
+8.Review the Present System
+ 
+        Perform a review of the present quality system. Copies of all the quality manuals, procedures, work instructions, and forms presently in use are obtained. These documents are sorted into the system elements to determine what is available and what is needed to complete the system. This activity is a gap analysis and can be performed by the element owners and their reams or by an external consultant.
+
+
+
+
+9.Write the Documents
+     Prepare written quality policy and procedure manuals – they can be combined into one document. Write appropriate work instructions to maintain the quality of specific functions. This process should involve every employee, because the best person to write a work instruction is the one who performs the job on a regular basis.
+
+10.Install the New System 
+
+     Integrate the policies, procedures, and work instructions into the day to day workings of the organization and documents what is being done. It is not necessary for all elements to be implemented at the same time.
+
+11.Internal Audit 
+
+     Conduct an internal audit of the quality system. This step is necessary to ensure that the system is working effectively and to provide management with information for the comprehensive management review. Minor corrections to the system are made as they occur.
+
+12.Management Review 
+
+     Conduct a management review. The management review is used to determine the effectiveness of the system in achieving the stated quality goals. The system is revised as needed.
+
+13.Preassessment
+ 
+     This step is optional. If a good job has been done on the previous steps, preassessment is not necessary.
+
+14.Registration
+
+     This step requires three parts: choosing a registrar, submitting an application, and conducting the registrar’s system audit. Considerations in choosing a registrar include cost, lead-time, your customer’s acceptance of the registrar, the registrar’s accreditation. and familiarity with your industry. The application for registration should also include supplying the registrar with the policy and procedure manuals for their review. The time involved in the registrar’s system audit will vary depending on the size and complexity of the organization and the number of auditors involved. It is usually one to three days and will consist of an opening meeting to describe the process the auditors will follow, the audit itself , and a closing meeting to discuss the findings of the audit.
+
+ISO/QS 9000 ELEMENTS
+
+
+1. Management Responsibility
+
+              Three major topics are addressed here-the quality policy, responsibility and in authority, and management review. The quality policy statement should be written in easy to understand language avoiding the use of buzz words and special language known only to a particular industry or organization. The quality policy must be understood, implemented and maintained at all levels within the organization. It must be aligned with the strategic goals and customer needs.
+
+Responsibility and authority must be defined for all personnel affecting quality. The senior managers must be ultimate managers of quality. They must be given the freedom and authority to take the actions necessary to prevent the further processing of nonconforming product or service until the process has been corrected. The use of an organizational chart is one method of showing the flow of authority an easy to understand format. A Management representative must be appointed and given the authority two implement and maintain the quality system.
+
+              Management review is required to ensure that the system remains effective. Reviews should make use of information from customer feedback and internal audits, as well as process and product performance. From the results of this review, management can determine if the changes is required in the organizational structure of the operations of the organization to improve the quality system. The frequency all reviews is not specified in the standard, only that they be carried out appropriate intervals. However to ensure the continuing effectiveness of the system, reviews should be conducted at least annually. They standard does require that a record of the reviews be maintained.
+
+
+
+
+2. The quality system
+ 
+     This element requires the establishment and maintenance of a documented quality system. It describes the level of the documentation, such as policies, procedures and work instructions. Emphasis is placed on the problem prevention rather than detection in all activities from sales to installation and servicing after delivery. This element requires that the system be documented and that compliance is mandatory. Written quality plans are required.
+
+3. Contact review
+
+              A review of contracts or purchase order is required by the standard. This review should answer three questions. First, are the requirements of the contract clearly defined? The supplier must be sure that the requirements of the customer are understood before a quality product or service can be supplied. If there is any doubt about the requirements, clarification should be made before the process begins. Second, are there any unusual quality requirements? A deviation from A standard product of service may require special processing. These requirements will have to be passed on to the proper areas to ensure meeting the specifications. Finally does the organization have the capability to meet the requirements?  Capability to meet the requirements means not only having the material and equipment to perform the necessary operations that also the technology, qualified employees, and the ability to deliver on time. Records of the contract reviews are required to show compliance with the standard. Procedures to amend the contract must be specified.
+
+4. Design control
+
+      The general requirement of design control is the establishment and maintenance of procedures to control and verify that product design meets specified requirements and is
+Aligned with the contract review. This activity requires a procedure for planning the development of a design.The procedure should take into account the sequential and parallel activities involved in the design and provide an method to verify that the activities are being performed.Evaluations of the safety,dependability, and performance of the product or service should be made periodically throughout the design process. Responsibility must be assigned to qualified personnel to ensure these evaluations are 
+performed system should be in place to identify all the design input requirements .Examples of design input are customer specifications,goverment regulations,environmental considerations,and health/safety considerations.Documentation is required to ensure that the design output meets the input requirements.Outputs include such technical documents that will be used throughout the production and installation processes.The comparison of output to input should be carried out through regular reviews during the design process.Design validation is required after the product is developed. All design changes are reviewed and evaluated for the effect they will have on the overall product or service . Finally, the system must have the capability to communicate changes to all concerned parties.
+The supplier should have individuals qualified in those skills the customer deems appropriate such as finite element analysis .FMEA ,design of experiments ,QFD,and so forth .The supplier’s CAD/CAE computer system shall be capable of two-way communication with the customer’s system.The supplier’s design output shall include techniques for optimization,innovation,simplification,waste reduction, Geometric dimensioning and tolerancing (GD&T), cost performance  analysis ,use of feedback,and design FMEAs.The prototype program shall incorporate as many of the production conditions as possible , and performance tests shall include as appropriate product life,reliability and durability.All design changes require written customer approval.
+
+5.Document and data control
+
+     This element requires that procedures and a master list be established and maintained to control all documents and data that affect the quality of a product or service.Examiples of documents requiring control are blueprints, inspection instructions,work instructions, test procedures ,and ,of course,the quality policies and procedures manuals, Methods must be in place to provide for the review and approval of documents for adequacy before they are issued. Likewise ,changes to documents must be reviewed and approved by the same entity that performed the original review and approval unless specifically stated otherwise.The purpose of document control is to endure that current issues of documents are in place at all required locations.The controls should also provide for the prompt removal of obsolete documents.
+
+The most recent revisions of documents referenced by customer drawings or specifications shall be available at the expected points of potential use.Appropriate special characteristic marks must be placed on process control documents. The supplier must establish a procedure to assure the timely review;distribution,and implementation of all customer engineering standards/specifications and changes.
+
+
+6.Puchasing
+
+          The general requirement of this element is to establish and maintain documented
+ procedures to ensure that purchased materials or products will  conform to specified requirements.To meet this requirement, the procurement specifications must clearly describe the material, product or service being ordered..These specifications  may be in the form of a purchase order listing nomenclature ,part number,grade, class , or style of the item required. Drawings ,copies of industry standards , and /or manufacturing instructions can also be attached to purchase orders. Procedures should be in place for the review and approval of purchase orders for adequacy of the requirements prior to release.
+
+    This element also requires  procedures for the evaluation, approval, and monitoring of subcontractors . This evaluation can be accomplished through (1) a review of the subcontractor’s  past performance. Either to the organization involved or through a check of references, or (2) by conducting a survey of the subcontractor’s quality system and facilities .A list of the approved subcontractors is maintained.The material,products,or services that can affect the quality of the end item should come from an approved subcontractor. A system  for rating subcontractors is developed  and a database of subcontractor performance maintained.Each subcontractor’s rating is reviewed at least  annually.When a subcontractor’s performance becomes substandard, a corrective action request is issued ,requiring the subcontractor to respond with an action plan to correct the deficiencies ,Provisions are also made for the customer to verify,when required by contract, the quality of subcontracted items. However,customer verification shall not absolve the organization of the responsibility to provide acceptable product or service.
+
+7.Control of Consumer supplied product
+
+These are times when the customer may also supply their raw material or component parts used in the production of a product. Because the organization does not own these items,it must  take precautions to ensure  the identification and segregation of them from any similar organization-owned items.Special procedures are necessary to ensure that  these items are used only for the manufacture of products,for that customer. There must also be a procedure for recording and notifying the customer of any cost or damaged items.Customer –supplied products are treated the same as other purchased items in respect to inspection and test procedures.
+
+8.Product identification and Traceability
+
+
+When appropriate , methods shall be  established for the identification of products during all stages of production, delivery, and installation.This identification can be accomplished through the use of lot or batch numbers on smaller, less  critical items to the application of serial numbers on critical items and finished goods. Records must be maintained that will allow for the tracing of a product,group of products, or service when required.The most important reason for establishing procedures t identify products or services  is the ability to track material  through the production process and to facilitate  the recall  of nonconforming items.
+
+9.Process Control
+
+Controlling the processes used to produce a product or provide a service is the best way of preventing problems and nonconformities.The first step in control is to identify and plan the steps necessary to produce the product or service.Documented instructions should then be provided to ensure that the plans are carried out . A monitoring system needs to be in place to verify that the instructions are being carried out.The processes must conform to existing codes, standards ,procedures ,etc.Finally ,controls should exist to ensure that the proper equipment is maintained and environmental conditions are adequate.
+
+         Where the results of processes cannot be verified by subsequent inspection and where deficiencies become apparent after use, the process shall be performed by qualified operators.This type of process may require destructive  testing –for example , the testing of a weld for tensile strength.To find the breaking  point of the field it would be subjected to increasing pressure until it separates from the parent metal. The personnel performing  
+The process are trained and certified in that procedure, The personnel are also recertified 
+at regular intervals to ensure continuing quality. These processes require pre-qualification.
+
+10.Inspection and Timing
+
+This element addresses three areas-receiving,in process, and final inspection. The methods of test and inspection must be documented and records maintained as stated in the quality plan.
+	
+     Receiving inspection is used to verify that purchased items comply with required  standards and to ensure that they are not used prior to such verification.Subcontractor certificates can take the place of some inspections. If incoming items require immediate
+Release for urgent production purposed, a procedure  must be in place  for positive identification and recall should nonconformities subsequently be detected.
+
+  In-process inspection and testing procedures should be designed for early detection of nonconformities. Statistical process control (SPC) techniques are the most  commonly used techniques  for in –process inspection.They may be performed by the production personnel or inspection specialists.Some types of verification checks include setup and first-piece inspection,periodic operator inspection,fixed inspection stations,either with operators or automatic, and random checks by specialists.
+
+    Final inspection and testing verifies  that  completed product meets the required  specifications.Verifications can be accomplished in two ways:acceptance inspection and test or product quality auditing .Acceptance inspection requires measurement and testing as the basis for final release of a product. Quality auditing is check for compliance with previously required inspections during the incoming and in-process procedures.Checks are performed on  representative sample units on either a continuous or periodic basis.
+
+In all phases of the inspection and testing of product, provisions must be made for the identification and segregation of nonconforming product when it is discovered .Records showing the responsible authority and indicating that the product has passed the required inspection and test procedures must be maintained.Inspection and test records are also useful in verifying product  compliance to regulatory requirements.
+
+11. Control of Inspection, measuring and test equipment
+
+  Inspection and testing methods are of little value of the equipment used for these procedures is not accurate and functioning properly.This element required the control,
+calibration, and maintenance of all equipment used to ensure product quality, whether the equipment belongs to the organization,is on loan from a customer,or is owned by an employee.The accuracy of the calibration must be traceable to the National institute of standards and technology (NIST). Calibrations must be performed on a regularly scheduled basis and  documented. The equipment should show the calibration status,date it was calibrated, and the due date for the next calibration.Procedures must be provided for reporting and segregating any equipment that  has been damaged, is known to be out of calibration, or is beyond the calibration date.Provisions must  also be made to ensure that unauthorized adjustments  are not performed on inspection equipment.
+
+12. Inspection and Test Status 
+A product’s condition  must be identified throughout the production, installation, and servicing of the product. It also must relate to the  written  control plan. The status  should indicate whether the product has been (1) inspected and accepted,(2) inspected and rejected, (3) inspected and on hold for a decision as to accept or reject, or (4) not yet inspected. The inspection authority should also be identified through  a signature , stamp, or some other identifying mark.
+
+
+
+13. Control of nonconforming product
+  When nonconforming product is identified , it must be removed immediately from further processing,clearly marked,and segregated in a manner to preclude any possible use until its disposition is decided. The responsibility for review and the authority for disposition of nonconforming product  must be defined and the disposition documented . There are four ways in which nonconforming material can be handled. It may be reworked to meet the specified requirements,accepted without repair by agreement of the customer,regradedfor alternative use,or scrapped.All product that is repaired or reworked 
+must be reinspected in accordance with documented procedures before it is released .
+
+14. Corrective and Preventive Action
+Documented procedures must be in place for implementing corrective and preventive actions. Corrective action begins with the detection of any suspected nonconformance and ends in  taking the appropriate action to correct  the deficiency and prevent its recurrence. The responsibility for corrective action starts with the affected area;however,it may escalate to higher authorities during the evaluation process. Evaluation of a quality problem is geared toward identifying the root cause of the problem and then planning to prevent its recurrence.This activity requires the analysis of all related proceses,operations,quality records,and specifications that may have contributed to the deficiency. The necessary actions to prevent recurrence of a nonconformity may include such things as a change in the production process a change in handling methods, revision to the product specifications, or revision to the quality system.After corrective action is in place,steps are taken to verify that the action has been effective.Preventive actions include the effective analysis of data to eliminate potential causes of nonconformities and the use of control to ensure that it is effective.
+
+15.Handling,Storage, Packaging, Preservation and Delivery
+
+These activities take place throughout the manufacturing process. Incoming material,in process material and finished product  must be handled in a manner that will ensure their protection from damage and deterioration.Material and product  in storage must be easily identified, and the storage areas should provide for physical security, environmental controls ,and rotation of stock to avoid loss due to age.Packaging must provide protection against damage , deterioration, or contamination for as ling as the product remains the responsibility of the supplier. Containers must provide clear descriptions of their contents for easy identification and conform to any contractual requirements of the customer.Preservation of the product is required when under  the supplier’s control. Delivery of product must be designed to protect the product during transportation to its destination.
+
+
+
+16.Control of Quality Records
+
+Quality records are used to demonstrate the achievement of required quality and verify the effective and economical operation of the quality system.This element requires that the records be maintained for the established retention period or as prescribed by contractual requirements. They must be stored in a protected environment from which they can be easily  retrieved for review.When required by a contract, the quality records must  be made available to the customer.
+
+17.Internal Quality Audits
+
+     The purpose of this element is to ensure that the quality system is working according to plan and to provide opportunities for improvement .It is an important tool for the management review process.Internal audits must be performed for all organization activities and should be conducted by personnel who are independent of the activities being audited.The schedule frequency is based on the importance of the element.The audit findings should address specific examples of noncompliance,possible reasons for a noncompliance, and suggestions for appropriate corrective action .Follow-up audits must verify the corrective action taken.
+
+18.Training
+
+     The requirements for training are very general,leaving the decision of appropriate training to the organization involved.Most programs include training in plant safety,the quality system ,basic statistical concepts, and technical skills. Records must be maintained  to document  that the training requirements  have been fulfilled.
+
+19.Servicing
+
+     This element simply requires procedures to be in place for performing after-delivery service on and verifying ,through documentation .that the servicing meets the  contract’specified requirements  .In planning the procedures for servicing consideration should be given to clearly defining the responsibilities of the supplier and the customer. Service activities include providing suitable maintenance instructions, technical backup,and  competent service personnel.
+
+20.Statistical Techniques
+
+     Statistical techniques should be implemented whenever they are suitable and practical for the improvement and/or control of process or product quality.They are useful in every area of an organization’s operations and may be applied to market analysis,product design,data analysis,product capability studies,and sampling inspection techniques . This documentation and results  of these techniques can be used to show conformance of product and service requirements.
+
+     ISI CERTIFICATION
+
+The product certification scheme is basically voluntary and aims at providing quality, safety and dependability to the ultimate customer. Presence of certification mark known as Standard Mark on a product is an assurance of conformity to the specifications. The conformity is ensured by regular surveillance of the licensee's performance by surprise inspections and testing of samples, drawn both from the factory and the market.
+
+INTRODUCTION
+
+The Bureau of Indian Standards, empowered through a legislative Act of the Indian Parliament, known as the Bureau of Indian Standards Act, 1986, operates a product certification scheme, and has till date granted more than 30 000 licenses to manufacturers covering practically every industrial discipline from Agriculture to Textiles to Electronics. The certification allows the licensees to use the popular ISI Mark, which has become synonymous with Quality products for the Indian and neighboring markets over the past more than 40 years. The Bureau's predecessor, the
+Indian Standards Institution began operating the product certification Scheme in 1955. Presently more than 17000 licenses are in operation covering about 1100 products. 
+CERTIFICATION SYSTEM
+The BIS product certification scheme is essentially voluntary in nature, and is largely based on ISO Guide 28, which provides general rules for third party certification system of determining conformity with product standards through initial testing and assessment of a factory quality management system and its acceptance followed by surveillance that takes into account the factory Quality management system and the testing of samples from the factory and the open market. All BIS certification is carried out on Indian Standards, which have been found amenable to product certification. A sizable number of Indian Standards have however, been harmonized with ISO/IEC Standards and some are dual numbered as IS/ISO or IS/IEC Standards.
+A large number of operational elements of the BIS product certification scheme correspond with the requirements of ISO Guide 65. 
+TYPES OF LICENSING
+Although, the scheme itself offers voluntary licensing, the Government of India, on considerations of public health and safety, and mass consumption has enforced mandatory certification on various products through Orders issued from time to time under various Acts. While the Bureau continues to grant licenses only on application, the enforcement of compulsory certification is done by the notified authorities. Given later in this document is a list of items brought under mandatory certification, together with the corresponding Indian Standard Number, and the authorities responsible for 
+enforcing the orders.
+Under separate arrangements with Statutory agencies some products have been placed under special certification schemes of lot or batch inspection, carried out by BIS Inspecting officers. A majority of Gas cylinders and valves are certified through such schemes. Under agreement with UNICEF, Deepwell hand-pumps, a critical potable water supply source for rural areas is also licensed under a lot inspection scheme.
+For all other products, the manufacturer is permitted to self certify the products after ascertaining its conformity to the Standard licensed for. Through its surveillance operations, the Bureau maintains a close vigil on the quality of goods certified.
+
+Provision exists for sub-contracting certification surveillance activities to competent agencies in specific areas. Some steel products, rubber products and electronic products are presently under such surveillance agreements.
+OPERATIONAL AREAS 
+The BIS Product Certification Scheme is open to manufacturers in all countries without discrimination.  While a license can be granted for any Indian Standard specifying product characteristics, which is amenable to certification, the broad areas of technologies now under certification are:
+
+* Textiles 
+* Chemicals and Pesticides 
+* Rubber and Plastic products 
+* Cement and concrete products 
+* Basic metals and fabricated metal products 
+* Machinery and equipment 
+* Electrical, electronics and optical equipment 
+* Automotive components 
+* Agriculture, food, beverages and tobaccos 
+* Leather products 
+* Wood products 
+* Paper and pulp products 
+* Testing instruments 
+* Building materials
+*  Pumping, irrigation, drainage and sewage equipment
+
+
+
+
+
+
+
+
+
+
+DESIGN,DEVELOPMENT AND IMPLEMENTATION OF RE-ENGINEERING
+(BUSINES PROCESS REENGINEERING)
+
+1. Introduction  
+
+	Business Process Re engineering(BPR) consist of drastic change-change in the organizational structure, management systems, employee responsibilities, and performance measurement, incentive systems, skill development, and use of modern information technology. 
+
+	Successful BPR can result in enormous reduction of cost and cycle time. It can also potentially create substantial improvements in quality, customer care, or other business objectives. The promise of BPR is not empty-it can actually produce revolutionary improvements for business operations. Re engineering can help an aggressive company to stay at the top and convert a company at the verge of bankruptcy into a successful enterprise. The success of BPR has spawned across international arena and major re engineering are being conducted across the globe.
+
+2. Emergence of BPR
+
+	In 1990 and again in 1993,some definite work were put forward by Dr. Michael Hammer,James Campy and Thomas Davenport. Hammer, with Campy,CEO of CSC Index,Inc. gathered information about organizations thriving in the respective areas, along with assorted management consultant experience. They asked the question of “What worked and why?” along with “What didn’t work and why?”. They evaluated the answers that they got and arrived at a list of practices which they called Business Re engineering.
+
+	“Business re engineering is the fundamental thinking and the radical redesign of the business process to achieve dramatic improvement in I critical, contemporary measures of performance such as cost , quality ,service and speed”-Dr. Michael Hammer
+
+Some important features of re engineering is given below
+
+
+
+FACTORS
+
+ 1.  Level of change and objective
+
+ 2.  Starting point
+ 3.  Frequency of change
+ 4.  Time required
+ 5.  Participation
+ 6.  Typical scope
+ 7.  Risk
+ 8.  Primary Enabler
+ 9.  Type of changes
+10. Customer Focus
+11. Continuous Improvement
+12. Training
+13. Use of teams
+14. Integration of overall process
+15. Expected Improvement
+16. Sources of leadership
+17. Case of action
+18. Senior management involvement
+19. Role of information technology
+20. Involvement
+21. Orientation
+22. Focus
+23. Investment                FEATURES
+
+Radical, Breakthrough, periodic, Abrupt and volatile
+Clean slate
+One-time
+Long
+Top-down
+Wide
+High
+Information Technology
+Cultural/Structural
+Essential
+None
+Significant
+Marginal
+Central and significant
+Very High
+Often managed by outsiders
+Compelling
+Intensive through out
+Cornerstone
+A few champions
+Technology,Information
+Profit
+High initially, less later
+3. The 7 R’s of Re engineering
+
+	Re engineering is not downsizing or automation. It involves “redefining and rethinking everything”. To incorporate re engineering, six peripheral and one central Rs are needed. These are:
+
+(1)Re orchestrate as the central theme Re engineering is brought about by discontinuous thinking, breaking conventions of all activities and
+
+(2)Realization, Requirement, Rethink, Redesign, Retool and reevaluate as the six peripheral themes.
+
+
+
+                                                                         
+                                                 
+
+             
+                                
+                                      
+1) REORCHESTRATE    
+
+	Re-orchestration forms the central theme or hub of the re-engineering effort .Its purpose is to bring about organizational change necessary for re-engineering. This can be achieved through:
+
+(a)Transforming organization from the traditional hierarchical organization to the network-based organization.
+
+(b)Re-engineering of few (one or two) cross –functional organizational process.
+   
+Key principles of re-orchestration
+
+1. Develop proactive, visible and passionate leadership.
+2. Change accountability to support new process.   
+3. Re-engineering efforts should be in line with new or retained beliefs and values  
+    of the organization.
+4. Develop incentives for re-engineering efforts.
+5. Ensure job security and redeployment of work force after re-engineering.
+6. Plan training to sustain post-re-engineering scenario.
+7. Re-engineering should be treated with zeal and a mission.
+8. Involve everyone, especially top management to ensure full commitment.
+9. Re-engineering process should be heavily clubbed with open communication    
+    among the top management, other employees and consultants for reducing chances   
+    of mistrust, confusion and passiveness.
+10. During re-engineering process many things will be fluid,ambiguous,and tentative. 
+      Everyone must be trained to accept this transition.
+ 11.New rules for employees empowerment must be derived. Any obstacle in the path 
+     of re-engineering should be removed by total commitment for change and   
+     innovation..
+ 12. Celebrate any success in the path of the re-engineering effort. It is important 
+      because re-engineering effort is always associated with some failure and fine 
+      tunings.
+
+(2) REALIZATION
+
+	Realization is the first step of re-engineering. It involves the questions like “Why are  We doing this the way we are doing it now?” Why do we do what we do now?” What can we do about it?” Probing into the present may result in the realization for the need of radical and dramatic improvement. This realization is started with a careful SWOT analysis
+                                 
+                                                  
+                                                                                                                                                                                                                        
+  
+
+
+
+
+
+
+
+
+
+
+
+S
+
+W
+
+O
+
+T
+
+
+
+
+
+
+
+
+Strength
+
+Weakness
+
+Opportunity
+
+Threat
+Analyze the internal Strengths of the Organisation
+Analyse the internal Weakness of the Organisation
+Analyse the Opportunity in the emerging areas
+Analyse the external Threat from the environment/competitors/emerging technologie(3) REQUIREMENTS
+
+	Requirement analysis involve the aligning the mission, vision, values and key requirements of the the enterprise to satisfy the customers expectations. Re-engineering efforts should not start with the requirement analysis for the customers,products,services ,process ,owners and suppliers.
+
+(4) RETHINK
+
+	Rethinking is the critical examination of all the current and existing conditions of the enterprise. It has a special focus on the process weakness and the variations. The critical analysis of the outdated policies,methods,technologies and work habits has to be done at this state.   This would form the basis for the transformation process in re engineering.
+
+(5) REDISGN
+
+	For any re engineering efforts ,the redesign of the enterprise has to be meticulously planned. The effort in re engineering is focused on the cross-functional activities of ambiguous nature. The redesign should involve on breaking conventional rules and breakthrough thinking. Redesign should be shaped around the visionary goals of the enterprise. It can be effective with supports from information technology. The twelve words that help in deciding the  move towards redesign
+is given below
+   
+
+
+
+
+MOVES IN REDESIGNEXPLANATION      1. Challenging  Hold nothing scared 
+Scrutinize current practices.      2. Eliminating Eliminate unnecessary process
+Eliminate unnecessary control      3. Flattening         Eliminating hierarchy in the management      4. Simplifying  Simplifying the customer relationships
+Simplifying the vendor relationship
+Simplifying process and information flow in the supply chain.      5. Empowering       Empower “intelligent node” supply on the supply-chain of the enterprise 
+Use IT to achieve empowerment      6. StandardizingBuild uniformity in dealing with similar problems.      7. Paralleling      information,fed at any part of the system is processed in parallel in many parts of the enterprise for different purposes       8. Partnering Form strategic alliance with different supply-chains      9. Informing    Share information from a common source
+Build strong information links
+Information itself is the link in the seamless integration of the enterprise    10. Monitoring Continuous tracking of the performance measures.
+Use feedback extensively and make it available at all the parts of the enterprises    11. OutsourcingUse different enterprises to perform few specific functions of your organizations.
+Select specialist enterprise for functions which is outsourced.    12. Pre -schedulingSchedule activities in advance and let it be known to all concerned.
+
+
+
+
+
+
+
+
+(6) RETOOL
+
+	The purpose of retooling is to ensure that the evolving enterprise will become more responsive to the re engineering. This is necessary to minimize the inflexibility after the BPR project. Retooling needs a clear understanding of the current practices of information processing and handling of all databases. An assessment  of appropriate support and appropriate network of hardware,technology and procedure is the prime objective of retooling.
+
+	“The retool phase involves the evaluation and adaptation of more competitive systems,such as technologies ,required to improve production or service work process,in order for the retooling effort to be adequate”-Edosomwan,J.A.
+
+(7) REVAULATE
+
+	Reevaluation is the final phase of the re-engineering. It involves the reevaluation of the the entire process to ensure that once the redesign and retooling efforts are over,the evolved process has attained the requisitioned objectives-evaluation should be on the basis of same performance indicators. These performance indicators should must specify the improvement of the core competencies of the enterprise.
+
+	“When you start to re-engineer process,better have customers and suppliers on the team,because without them you will have a very small scope for BPR,which offers no strategic value.”-Prof. Michael Earl,London Business School.
+    In the reevaluation stage,the focus should be on the entire process and ,thus on the enterprise.
+
+	The seven R's of re-engineering help the re-engineering process in many ways. Once realization is sensed,the Requirement and re-thinking process start for the mobilization of the re-engineering team,process-making and process-owners. Efforts for re-orchestration,redesign,retooling and diagnosis of the current practice concurrently start. This give rise to new breakthrough or TO-BE enterprise with major transformation,thus brought about are implemented after detailed designs of new process. During the transition-stage of major level,transition strategy is freezed by top management. Pilot implementation are taken undertaken. Concurrently,whole changes are made known and implemented. New methods are formalized and efforts are made fro their acceptance.
+
+4. Common Steps(Phases) when performing BPR 
+
+	The thoughts of management experts,the experience of management consulting firms and the research conducted by academicians have resulted in a list of steps\phases present in a successful BPR implementation. They are: 
+
+Phase 1:Begin Organizational Changes
+
+	In this stage , a   very extensive look is taken into the organization. All process are evaluated and area were a total change is required are found .Procedures,environment of business,future direction of the organisation is throughly evaluated.  People from all  levels are involved and the need  for change 
+is convinced to them. This helps to accelerate the rate of acceptance and avoid the confusions during BPR implementation.
+
+Phase 2:Build the Re-engineering Organization
+
+	In this phase ,the team for re-engineering is setup. It consist of an executive leader to lead th team .He should have the right credentials and authority. He is to be assisted by process owners ,who will concentrate on  the re-engineering of  major process .Each will be properly familiarized with  the process and will have a team of insiders who know the strengths  and weakness of the process. They   will helped in the overall  by a re-engineering process specialist who will provide all the necessary expertise and support  . The success of BPR will depend on the team.
+
+Phase 3:Identify BPR Opportunities
+
+	Here ,the working of the whole company is divided into a  number of process with clearly defined limits. The importance,scope of improvement,its relation to bottom-line profits etc of all the process are determined .Potential changes in areas like use of information ,use of technology ,human factors etc are  identified. The views and wishes of the customers are taken into consideration during this stage. The present strategies are examined and modified for a  process-oriented  structure. Performance are compared with those collected from inside and outside of the industry. Factors  crucial for the implementation of BPR like key performance benchmarks,key process characteristics,critical success factors,potential barriers etc are identified. From all these plans for BPR changes are found out.
+
+Phase 4:Understanding the Existing Process 
+
+	In this stage,the current  way of doing things,current technology,current information use etc are  studied in detailed by  making use of models. The results obtained  is compared to the  aimed state and used to determine where we are are how far we need to go. All current operational assumptions are examined. The use of technology is critically evaluated. At   the end,we will end up with an estimate of the cost,robustness,and  functional value of each technology and information systems currently being used.
+
+Phase 5:Re-engineer the Process
+ 
+	In this stage ,the action starts. The re-engineering team  starts to decide what should be done,what new  technologies should be implemented ,what new assumptions should  be made etc .The BPR team involved in this phase should contain insiders and outsiders  of the organizations  so that we get a very comprehensive look of current practices and organizational values and beliefs. People who is related to the process re-engineering are involved so as to carry out the re-engineering successfully and  for its sustainability after its implementation. A brain storming session is conducted to create new process ideas. A very critical analysis of future information and use of it is carried out. The impact of all changes on internal and external  stakeholders and process external to the organisation are found out and documented.  
+
+Phase 6:Blueprint the new Business system 
+
+	In this a blueprint of the desired system is developed. It contains the plan of the new organizational hierarchy which will enable the flow of information for the implementation of the new process. It  contains in details the new technologies that will be implemented,the new way to process information,the values and beliefs that the organization will be based on, compensation systems and reward systems  etc. Everything with respect to the re-engineering is detailed out. It will according to this plan that the re-engineering will be carried out.
+
+Phase 7:Perform the Transformation
+
+	Here the transformation is carried out. The blue print is implemented and all necessary changes are carried out. Migration plans are planned for a smooth change .Changes to the top level management and training of the workforce is carried out to achieve the implementation of the blueprint developed. During this it should be made sure that no confusion rises and the necessary information is made available to the concerned at the necessary time. All involved should be made aware what is going on  and  adjustments needed  should be made. A step-by-step approach or a one-step implementation of the blueprint is done according to the scale and ambitions of results required.  Special focus should be  paid for the reformation of the information systems to support the new processes and achieve the desired results.  At the end the whole process should be reevaluated so that the required goals are achieved.                                     
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. REASONS FOR FAILURE OF BPR AND METHODS TO MINIMIZE IT
+
+
+
+
+
+
+
+
+
+
+
+	- 1 - 	HUMANITIES-MANAGEMENTASSINGMENT
+

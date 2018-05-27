@@ -1,0 +1,54 @@
+#include<stdio.h>
+#include<stdlib.h>
+//#include<conio.h>
+#include<string.h>
+
+void main()
+{
+FILE *f1,*f2;
+char s[80];
+clrscr();
+f1=fopen("test.txt","w");
+if(f1==NULL)
+{
+puts("Cannot open file");
+exit(1);
+}
+printf("\nEnter a few lines of text to file 1\n\n");
+while(strlen(gets(s))>0)
+{
+fputs(s,f1);
+fputs("\n",f1);
+}
+fclose(f1);
+
+f1=fopen("test.txt","r");
+if(f1==NULL)
+{
+puts("Cannot open file");
+exit(2);
+}
+
+f2=fopen("test1.txt","w");
+if(f2==NULL)
+{
+puts("Cannot open file");
+exit(3);
+}
+
+while(fgets(s,79,f1)!=NULL)
+{
+fputs(s,f2);
+}
+fclose(f1);
+fclose(f2);
+
+printf("The text copied to file 2 is\n\n");
+f2=fopen("test1.txt","r");
+while(fgets(s,79,f2)!=NULL)
+{
+printf("%s",s);
+}
+fclose(f2);
+//getch();
+}

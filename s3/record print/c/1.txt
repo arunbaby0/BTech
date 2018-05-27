@@ -1,0 +1,13 @@
+#include<stdio.h>
+int fact(int f)
+{
+if(f<=1)return 1;
+else  return (f*fact(f-1));
+}
+main()
+{
+int n;
+printf("enter number");
+scanf("%d",&n);
+printf("factorial= %d\n",fact(n));
+}

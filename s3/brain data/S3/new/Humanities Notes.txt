@@ -1,0 +1,425 @@
+GROUP D
+INSPECTION
+
+
+INTRODUCTION:
+
+          Inspection is the function to judge the quality of a product. According to Dr. W R Springle “ inspections the process of measuring the quality of a product or service in terms of established standards.
+             Inspection is an important aspect of production control. Products should be checked at various stages for the size , shape, and quality. Defective parts cannot reach the assembly points. To maintain the desired accuracy and quickness, special gauges and other measuring devices must be used. So inspection is a tool for controlling the quality of the product.
+
+OBJECTS OF INSPECTION :
+
+1) To collect information regarding the performance of the product with established standards for the use of engineering, production, purchasing and quality control etc.
+2) To sort out poor quality manufactured products and thus to maintain the standards.
+3) To establish and increase the reputation by protecting consumers from receiving poor quality products. 
+
+           So, for achieving these objectives, there is inspection in every organization and its cost has to be borne by the employer but if there is no inspection the products of poor quality may reach the consumers. Material wastage and spoilage will be more, machining time will be more. So products of poor quality and high cost will reduce the reputation of the concern and demand of their products will gradually go on reducing and the business may come to stand still. 
+
+PRINCIPLES OF INSPECTION:
+
+The two most important principles of inspections are 
+
+a) Inspection function for maximum efficiency must be independent but coordinate with the functions of production, planning and sales department.
+b) Improvement in quality performance is achieved as a result of changes in engineering specifications of manufacturing procedures and not by inspection techniques.
+ 
+KINDS OF INSPECTION:
+
+             Because of the varieties of manufactured products and thw wide differences in comparative qualities, it is reseonable to expect various kinds of inspection.
+
+
+
+The most important are
+1) Tool inspection
+2) First piece inspection.
+3) Functional inspection.
+4) Endurance inspection.
+5) Final inspection.
+ 
+TOOL INSPECTION:
+
+              According to these tools, fixtures, jigs and gauges are inspected in advance to the work of production. It has been assumed that when tools are proper the products manufactured by them will be satisfactory. This method can give good result in automatic production work. 
+
+FIRST PIECE INSPECTION:
+
+              In automatic machines, if first three or four products are inspected and are found to be satisfactory then its is assumed that product manufactured afterwards will also be satisfactory.
+
+FINAL INSPECTION:
+
+               In this type of inspection articles are inspected then they are completely manufactured before sending the to the store.
+
+FUNCTIONAL INSPECTION:
+
+               This inspection is carried out after the completion of assembly to check the accuracy of assembly to assure it will function as required. 
+
+ENDURANCE INSPECTION:
+
+                This inspection is carried out to estimate how much time and assembly will withstand its use and to determine weakness for correction.
+
+
+ADVANTAGES
+
+1) Errors caught in time prevent spoilage of large amount of work.
+2) Product layout and mass production can well be achieved.
+3) It reduces labour cost.
+4) Reduction of work in process is possible.
+
+
+
+
+DISAVANTAGES
+
+1) Advance machines for inspection purpose cannot be used.
+2) Sometimes work may pile up at work stations. The worker has completed his work but awaiting for inspection.
+3) There can be delay in deciding the doubt full cases. 
+4) The inspector may be influenced by some of the workers and start favoritism.
+
+DUTIES ANS RESPONSIBILITIES OF CHIEF INSPECTOR:
+
+1) To organize and superwise the work of inspecting staff.
+2) To train the staff , to carry out their duties effectively.
+3) To reject the products which are below standard.
+4) To send reports on inspected work and to soggist the ways to minimize faulty production.
+5) To see that proper care of costly equipments in inspection department is being taken.
+
+
+
+
+
+
+TOOLS FOR INSPECTION
+
+   The work of inspection requires equipments. These will help to speedup inspection and precision.
+1) Inspection way measurement:
+Usage of multimeter , vernier caliper , torque incating spanners etc.
+2) Limit gauges:
+These are used by unskilled operator to know whethwer dimensions are within the limits.
+3) Optical Comparators:
+The object is magnified 10 to 50 times and projected on a screen to enable to compare with known standards.
+4) Non destructive testing:
+These methods are visual , pressure and leak penetration , thermal , acoustic etc.
+
+
+
+STATISTICAL QUALITY CONTROL
+
+
+TERMINOLOGY:
+
+Statistics: 
+Means data, sufficient enough to obtain reliable results.
+
+Quality:
+Is a relative term and can be defined as fitness for the purpose.
+
+Control: 
+Is a system for measuring and checking. It suggests when to inspect, how often to inspect and how much to inspect, this also incorporates a feed back mechanism to explore the cause of poor quality and takes corrective steps.
+
+ADVANTAGES :
+
+SQC has the following main advantages over 100% inspections :
+
+1.  Reduction in costs since only a fractional output is inspected.
+2.  Easy to apply even by someone who is not specialized or trained.
+3. Accurate prediction for the future which not possible for even 100% inspection.
+4. Greater efficiency as it is less time consuming and more interesting to do.
+5. Can be used where inspection needs destruction of items.
+6. Early detection of faults since the moment a sample point falls outside the control limits, it is taken as a danger signal and necessary corrective measures are taken.
+
+
+CONTROL CHARTS:
+
+         Control charts are graphical representation and are based on statistical sampling theory, according to which an adequate sized random sample is drawn from each lot. A control chart detects variation in the processing & warns if there is any departure from the specified tolerance limits. These charts immediately tell the undesired variation & help in detecting the cause & its removal.
+
+ADVANTAGES OF CONTROL CHARTS :
+
+1. Indicates whether the process in control or out of control at a particular point of time.
+2. Ensures level of quality.
+3. detects unusual variations taking place in a process.
+4. Helps in reducing the reduction as it warns in time so as to rectify the process.
+5. Helps in setting the tolerance limits.
+
+TYPES OF CONTROL CHARTS:
+
+1. Control chart for variables. These are used to achieve and maintain an acceptable quality level for a process whose product can be subjected to quantitative measurements.
+
+2. Control charts for attributed. These are used to achieve and maintain an acceptable quality level for a process whose product cannot be subjected to quantitative measurements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CAUSES OF VARIATION IN QUALITY:
+
+1. Chance causes.: These vary at random and are independent of each other. It is difficult to eliminate these causes. They are natural and beyond human control.
+2. Assignable causes.: These are non random and can be identified. These causes may creep in at any stage of the process. The variations due to these can be detected and eliminated and hence are also known as preventive or controllable variations.
+
+TYPES OF CONTROL CHARTS IN SQC:
+
+1. X1and R chart for process control.
+2. P chart for analysis of fraction defectives
+3. C chart for control of number of defects per unit
+1. The X1 and R chart: This chart is used for the quality characteristics which are specified as variables that’s on the basis of actual readings taken. The purpose of this chart is
+a. to establish whether the process is in statistical control or not
+b. to determine whether the process capability is comparable with the specifications
+c. To detect trends in the process so as to assist in planning, adjustment and resetting of the process.
+d. To show when the process is likely to be out of control.
+
+CONTROL CHARTS FOR VARIABLES:
+
+PROCEDURE :
+
+A number of samples of components coming out of the process are taken over a period of time.Each sample must be taken randomly and the size of the sample is generally kept 5, but 10-15 units can be taken for sensitive control chart. For each sample, the avg value (X’) of all the measurements and the range R are calculated. The grand avg (X’) is equal to \the avg value of all avgs, (X’) and (R’).(R’=avg of all ranges) are then found and from these we can calculate the control limits for the(X’)and R charts.
+
+
+
+TOTAL QUALITY MANAGEMENT
+
+
+INTRODUCTION:
+
+             Total Quality Management is a management approach that originated in the 1950's and has steadily become more popular since the early 1980's. Total Quality is a description of the culture, attitude and organization of a company that strives to provide customers with products and services that satisfy their needs. The culture requires quality in all aspects of the company's operations, with processes being done right the first time and defects and waste eradicated from operations.
+Total Quality Management, TQM, is a method by which management and employees can become involved in the continuous improvement of the production of goods and services. It is a combination of quality and management tools aimed at increasing business and reducing losses due to wasteful practices.
+Some of the companies who have implemented TQM include Ford Motor Company, Phillips Semiconductor, SGL Carbon, Motorola and Toyota Motor Company.
+
+
+TQM Defined :
+
+            TQM is a management philosophy that seeks to integrate all organizational functions (marketing, finance, design, engineering, and production, customer service, etc.) to focus on meeting customer needs and organizational objectives.
+TQM views an organization as a collection of processes. It maintains that organizations must strive to continuously improve these processes by incorporating the knowledge and experiences of workers. The simple objective of TQM is "Do the right things, right the first time, every time". TQM is infinitely variable and adaptable. Although originally applied to manufacturing operations, and for a number of years only used in that area, TQM is now becoming recognized as a generic management tool, just as applicable in service and public sector organizations. There are a number of evolutionary strands, with different sectors creating their own versions from the common ancestor. TQM is the foundation for activities, which include: 
+* Commitment by senior management and all employees 
+* Meeting customer requirements 
+* Reducing development cycle times 
+* Just In Time/Demand Flow Manufacturing 
+* Improvement teams 
+* Reducing product and service costs 
+* Systems to facilitate improvement 
+* Line Management ownership 
+* Employee involvement and empowerment 
+* Recognition and celebration 
+* Challenging quantified goals and benchmarking 
+* Focus on processes / improvement plans 
+* Specific incorporation in strategic planning
+
+
+This shows that TQM must be practiced in all activities, by all personnel, in Manufacturing, Marketing, Engineering, R&D, Sales, Purchasing, HR, etc.
+
+
+FEATURES OF TQM :
+
+1) It has a Quality Management system as its foundation.
+2) It is a top down approach with full commitment of top management.
+3) It is a continuous improvement at all levels through men and methods.
+4) Human resources are considered vital and having unlimited potential.
+5) It is a culture of the company
+6) It is customer oriented.
+7) It is people or employee oriented with their full participation.
+8) It is also leadership oriented and depends on proactive management and their full commitment.
+9)  It is competitive and achieves continuous and long term success.
+
+
+
+
+
+
+
+
+KEY COMPONENTS OF TQM:
+
+1. Foundation of a Quality Management system
+
+TQM is the foundation for activities which include; 
+* Meeting Customer Requirements 
+* Reducing Development Cycle Times 
+* Just In Time/Demand Flow Manufacturing 
+* Improvement Teams 
+* Reducing Product and Service Costs 
+* Improving Administrative Systems Training 
+2. Leadership and management commitment
+        
+        TQM is a top down management approach. Leadership and top management should induce and top management should inspire and induce others to follow. It should have vision and produce results.
+
+
+
+
+3. Human resources and Teamwork
+       
+        TQM is a collective approach of all employees to achieve highest possible level for customer satisfaction. Hence involvement and empowerment of human resources and teamwork are the thrust areas of TQM.Every individual is important to the organisation.The output of one employee is the input to the other.
+
+4. Physical resources, systems and Techniques for continuous improvements
+       
+       Customer needs change constantly and continously.Hence their satisfaction level also changes. One who is satisfied today will be dissatisfied today will be dissatisfied with the same product tomorrow.TQM should incorporate tools, physical resources, systems and techniques for continuous improvements to keep up with and exceed customer needs.
+
+ADVANTAGES OF TQM:
+
+* Companies achieve high competitiveness in cost, quality and customer satisfaction.
+* Result in high employee motivation, innovation and participation to be competitive.
+* Facilitate continuous product, quality and cost empowerment as per the customer needs.
+* Attain capability to expand in the national and international market.
+* Develop excellent quality culture in the organisation,reflecting quality in all spheres of activities.
+* Develop internal strength through its employees and systems to overcome bad times and competition.
+
+The Principles of TQM are as follows: 
+
+Quality can and must be managed. 
+Everyone has a customer and is a supplier. 
+Processes, not people are the problem. 
+Every employee is responsible for quality. 
+Problems must be prevented, not just fixed. 
+Quality must be measured. 
+Quality improvements must be continuous. 
+The quality standard is defect free. 
+Goals are based on requirements, not negotiated. 
+Life cycle costs, not front end costs. 
+Management must be involved and lead. 
+Plan and organize for quality improvement.
+
+
+
+
+The Ten Steps to TQM are as follows: 
+
+Pursue New Strategic Thinking 
+Know your Customers 
+Set True Customer Requirements 
+Concentrate on Prevention, Not Correction 
+Reduce Chronic Waste 
+Pursue a Continuous Improvement Strategy 
+Use Structured Methodology for Process Improvement 
+Reduce Variation 
+Use a Balanced Approach 
+Apply to All Functions 
+
+
+
+
+
+THE CONCEPT OF CONTINUOUS IMPROVEMENT BY TQM :
+
+              TQM is mainly concerned with continuous improvement in all work, from high level strategic planning and decision-making, to detailed execution of work elements on the shop floor. It stems from the belief that mistakes can be avoided and defects can be prevented. It leads to continuously improving results, in all aspects of work, as a result of continuously improving capabilities, people, processes, technology and machine capabilities.
+Continuous improvement must deal not only with improving results, but more importantly with improving capabilities to produce better results in the future. The five major areas of focus for capability improvement are demand generation, supply generation, technology, operations and people capability.
+A central principle of TQM is that mistakes may be made by people, but most of them are caused, or at least permitted, by faulty systems and processes. This means that the root cause of such mistakes can be identified and eliminated, and repetition can be prevented by changing the process.
+There are three major mechanisms of prevention: 
+Preventing mistakes (defects) from occurring (Mistake - proofing or Poka-Yoke). 
+Where mistakes can't be absolutely prevented, detecting them early to prevent them being passed down the value added chain (Inspection at source or by the next operation). 
+Where mistakes recur, stopping production until the process can be corrected, to prevent the production of more defects. (Stop in time).
+
+IMPLEMENTATION PRINCIPLES AND PROCESSES :
+
+          A preliminary step in TQM implementation is to assess the organization's current reality. Relevant preconditions have to do with the organization's history, its current needs, precipitating events leading to TQM, and the existing employee quality of working life. If the current reality does not include important preconditions, TQM implementation should be delayed until the organization is in a state in which TQM is likely to succeed.
+If an organization has a track record of effective responsiveness to the environment, and if it has been able to successfully change the way it operates when needed, TQM will be easier to implement. If an organization has been historically reactive and has no skill at improving its operating systems, there will be both employee skepticism and a lack of skilled change agents. If this condition prevails, a comprehensive program of management and leadership development may be instituted. A management audit is a good assessment tool to identify current levels of organizational functioning and areas in need of change. An organization should be basically healthy before beginning TQM. If it has significant problems such as a very unstable funding base, weak administrative systems, lack of managerial skill, or poor employee morale, TQM would not be appropriate.
+However, a certain level of stress is probably desirable to initiate TQM. People need to feel a need for a change. Kanter (1983) addresses this phenomenon be describing building blocks which are present in effective organizational change. These forces include departures from tradition, a crisis or galvanizing event, strategic decisions, individual "prime movers," and action vehicles. Departures from tradition are activities, usually at lower levels of the organization, which occur when entrepreneurs move outside the normal ways of operating to solve a problem. A crisis, if it is not too disabling, can also help create a sense of urgency which can mobilize people to act. In the case of TQM, this may be a funding cut or threat, or demands from consumers or other stakeholders for improved quality of service. After a crisis, a leader may intervene strategically by articulating a new vision of the future to help the organization deal with it. A plan to implement TQM may be such a strategic decision. Such a leader may then become a prime mover, who takes charge in championing the new idea and showing others how it will help them get where they want to go. Finally, action vehicles are needed and mechanisms or structures to enable the change to occur and become institutionalized.
+
+STEPS IN MANAGING THE TRANSITION :
+
+
+        Beckhard and Pritchard (1992) have outlined the basic steps in managing a transition to a new system such as TQM: identifying tasks to be done, creating necessary management structures, developing strategies for building commitment, designing mechanisms to communicate the change, and assigning resources.
+
+        Task identification would include a study of present conditions (assessing current reality, as described above); assessing readiness, such as through a force field analysis; creating a model of the desired state, in this case, implementation of TQM; announcing the change goals to the organization; and assigning responsibilities and resources. This final step would include securing outside consultation and training and assigning someone within the organization to oversee the effort. This should be a responsibility of top management. In fact, the next step, designing transition management structures, is also a responsibility of top management. In fact, Cohen and Brand (1993) and Hyde (1992) assert that management must be heavily involved as leaders rather than relying on a separate staff person or function to shepherd the effort. An organization wide steering committee to oversee the effort may be appropriate. Developing commitment strategies was discussed above in the sections on resistance and on visionary leadership.
+
+        To communicate the change, mechanisms beyond existing processes will need to be developed. Special all-staff meetings attended by executives, sometimes designed as input or dialog sessions, may be used to kick off the process, and TQM newsletters may be an effective ongoing communication tool to keep employees aware of activities and accomplishments.
+
+        Management of resources for the change effort is important with TQM because outside consultants will almost always be required. Choose consultants based on their prior relevant experience and their commitment to adapting the process to fit unique organizational needs. While consultants will be invaluable with initial training of staff and TQM system design, employees (management and others) should be actively involved in TQM implementation, perhaps after receiving training in change management which they can then pass on to other employees. A collaborative relationship with consultants and clear role definitions and specification of activities must be established.
+
+         In summary, first assess preconditions and the current state of the organization to make sure the need for change is clear and that TQM is an appropriate strategy. Leadership styles and organizational culture must be congruent with TQM. If they are not, this should be worked on or TQM implementation should be avoided or delayed until favorable conditions exist.
+
+           Remember that this will be a difficult, comprehensive, and long-term process. Leaders will need to maintain their commitment, keep the process visible, provide necessary support, and hold people accountable for results. Use input from stakeholder (clients, referring agencies, funding sources, etc.) as possible; and, of course, maximize employee involvement in design of the system.
+
+           Always keep in mind that TQM should be purpose driven. Be clear on the organization's vision for the future and stay focused on it. TQM can be a powerful technique for unleashing employee creativity and potential, reducing bureaucracy and costs, and improving service to clients and the community.
+
+TWO IMPLEMENTATION APPROACHES:
+
+TRADITIONAL MANAGEMENT APPROACH: 
+
+        This is the most common. A TQM is overlayed (some say forced) upon the other two systems. This approach represents the 80% failure of TQM's. In this approach TQM never becomes an accepted reality by either organizational or human resource management. It is usually seen as competition, or "something to be tolerated." The TQM system consumes valuable resources needed by the other systems and rejection begins to occur. 
+
+INTEGRATED MANAGEMENT APPROACH: 
+
+               This is the least common. A TQM is blended and balanced with existing cultural initiatives in both organizational and human resource management systems. This represents the 20% success rate of TQM's. Whether both organizational management and human resource management systems take on a "quality management commitment" or "join a quality management team" is not important. The principles of quality management are attended to as an important third system that blends, integrates, aligns and maximizes the other two systems to beat competition in world class quality performance. This approach can often be divided into two sub-choices, depending upon managerial resources, readiness, acceptance, and competencience. .
+
+
+
+
+
+
+
+
+
+
+
+CONCLUSION  :
+
+           TQM encoureges participation amongst shop floor workers and managers. There is no single theoretical formalization of total quality, but Deming, Juran and Ishikawa provide the core assumptions, as a "...discipline and philosophy of management which institutionalizes planned and continuous... improvement ... and assumes that quality is the outcome of all activities that take place within an organization; that all functions and all employees have to participate in the improvement process; that organizations need both quality systems and a quality culture.".
+
+
+QUALITY ASSURANCE
+
+
+Quality control is the control of quality during manufacturing. Both quality control and inspection are used to assure quality. In current quality control theory and practice, the meaning of “quality” is closely allied to cost and customer needs. Quality may be defined as fitness for purpose at lowest cost.  
+       
+Quality of any product is regarded as the degree to which it fulfills the requirements of the customer. Quality means degree of perfection. Quality is not absolute but it can only be judged or realized by comparing with some standards. It can be determined by some characteristics namely , design , size, material, chemical composition, mechanical functioning, workmanship, finishing and other properties.
+
+Quality assurance means to provide the necessary confidence to customer as well as to top management that all concerned are carrying out their job effectively and that the product quality is as per customers satisfaction with economy. Quality products can be produced only when all the departments fully participate and cooperate.
+
+Nowadays customers demand for higher quality and reliability. It has also been felt that even a single defect whatever maybe the reasons result in economic loss. These reasons have necessitated the need for total quality and reliability programs to cover wide spectrum of functions and various arrears of product design, production system design through various stages of material, manufacture and commitment to efficient maintenance and operation of the system as a whole. This is necessary of quality assurance and reliability of products. This assures the continuous failure free system to the customers.
+
+
+RESPONSIBILITIES OF QUALITY ASSURANCE DEPARTMENT :
+
+Plan, develop and establish quality policies
+To assure that products of described specification reaches to the customers
+Regularly evaluate the effectiveness of the Quality programmes
+Conduct studies and investigations related to the quality problems
+Liaise with different department, in and outside the organization
+Organise training programmes on quality
+Plan and coordinate vendor quality surveys and evaluate their results.
+Develop Quality assurance systems and regularly evaluate its effectiveness.
+
+
+
+QUALITY ASSURANCE SYSTEM :
+
+Quality assurance system should be developed incorporating the following aspects:
+
+Formulate the quality control and manufacturing procedures.
+Percentage checking be decided.
+Procedure and norms for plant performance as regards to quality be developed.
+Rejection analysis and immediate feedback system for corrective action.
+Prepare a manual for quality assurance.
+Formulate plans for quality improvement, quality motivation and quality awareness in the entire organization.
+
+
+              
+
+                     Concept of Gross functions for Quality Management
+
+
+
+
+
+
+
+
+
+	– 1 – 	HUMANITIES
+

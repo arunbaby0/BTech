@@ -1,0 +1,244 @@
+if(top==-1)
+printf("\nUnderflow!!!!!\n");
+else
+{
+if((st[top]!='#')&&(st[top]!='(')&&(st[top]!=')'))
+printf("%c",st[top]);
+top--;
+}
+}
+int pr(char x)
+{
+if((x=='+')||(x=='-'))
+return(1);
+else if((x=='*')||(x=='/'))
+return(2);
+else if((x=='(')||(x=='#'))
+return(0);
+}
+"1.c" 69 lines, 873 characters
+u0703019@kinchen:~/s4$vi 2.c
+"2.c" [New file]
+#include<stdio.h>
+#include<ctype.h>
+int top=-1;
+void push(char st[],int sz,char it)
+{
+if(top==stz-1)
+printf("\nOverflow!!!!!\n");
+else
+{
+top++;
+st[top]=it;
+}
+}
+
+void pop(char st[])
+{
+if(top==-1)
+printf("\nUnderflow!!!!!\n");
+else
+{
+if((st[top]!='#')&&(st[top]!='(')&&(st[top]!=')'))
+printf("%c",st[top]);
+top--;
+}
+}
+int priority(char x)
+{
+if((x=='+')||(x=='-'))
+return(1);
+else if((x=='*')||(x=='/'))
+return(2);
+else if((x=='(')||(x=='#'))
+return(0);
+}
+main()
+{
+char in[20],x,st[20];
+int stz=20,i,z;
+scanf("%s",in);
+push(st,stz,'#');
+for(i=0;in[i]!='\0';i++)
+{
+x=in[i];
+if(isalpha(x))
+printf("%c",x);
+else if(x=='(')
+push(st,stz,x);
+else if(x==')')
+{
+while(st[top]!='(')
+pop(st);
+top--;
+}
+else
+{
+z=pr(x);
+while((top>=0)&&(priority(st[top])>=z))
+pop(st);
+push(st,stz,x);
+}
+}
+while(top>=0)
+pop(st);
+printf("\n\n");
+}
+"2.c" [New file] 65 lines, 815 characters
+u0703019@kinchen:~/s4$gcc 2.c
+2.c: In function `push':
+2.c:6: error: `stz' undeclared (first use in this function)
+2.c:6: error: (Each undeclared identifier is reported only once
+2.c:6: error: for each function it appears in.)
+u0703019@kinchen:~/s4$vi 2.c
+"2.c" 65 lines, 815 characters
+#include<stdio.h>
+#include<ctype.h>
+int top=-1;
+void push(char st[],int stz,char it)
+{
+if(top==stz-1)
+printf("\nOverflow!!!!!\n");
+else
+{
+top++;
+st[top]=it;
+}
+}
+
+void pop(char st[])
+{
+if(top==-1)
+printf("\nUnderflow!!!!!\n");
+else
+{
+if((st[top]!='#')&&(st[top]!='(')&&(st[top]!=')'))
+printf("%c",st[top]);
+top--;
+}
+}
+int priority(char x)
+{
+if((x=='+')||(x=='-'))
+return(1);
+else if((x=='*')||(x=='/'))
+return(2);
+else if((x=='(')||(x=='#'))
+return(0);
+}
+main()
+{
+char in[20],x,st[20];
+int stz=20,i,z;
+scanf("%s",in);
+push(st,stz,'#');
+for(i=0;in[i]!='\0';i++)
+{
+x=in[i];
+"2.c" 65 lines, 816 characters
+u0703019@kinchen:~/s4$gcc 2.c
+Undefined                       first referenced
+ symbol                             in file
+pr                                  /var/tmp//ccmHy3ys.o
+ld: fatal: Symbol referencing errors. No output written to a.out
+collect2: ld returned 1 exit status
+u0703019@kinchen:~/s4$vi 2.c
+"2.c" 65 lines, 816 characters
+#include<stdio.h>
+#include<ctype.h>
+int top=-1;
+void push(char st[],int stz,char it)
+{
+if(top==stz-1)
+printf("\nOverflow!!!!!\n");
+else
+{
+top++;
+st[top]=it;
+}
+}
+
+void pop(char st[])
+{
+if(top==-1)
+printf("\nUnderflow!!!!!\n");
+else
+{
+if((st[top]!='#')&&(st[top]!='(')&&(st[top]!=')'))
+printf("%c",st[top]);
+top--;
+}
+}
+int priority(char x)
+{
+if((x=='+')||(x=='-'))
+return(1);
+else if((x=='*')||(x=='/'))
+return(2);
+else if((x=='(')||(x=='#'))
+return(0);
+}
+main()
+{
+char in[20],x,st[20];
+int stz=20,i,z;
+scanf("%s",in);
+push(st,stz,'#');
+for(i=0;in[i]!='\0';i++)
+{
+x=in[i];
+if(isalpha(x))
+printf("%c",x);
+else if(x=='(')
+push(st,stz,x);
+else if(x==')')
+{
+while(st[top]!='(')
+pop(st);
+top--;
+}
+else
+{
+z=priority(x);
+while((top>=0)&&(priority(st[top])>=z))
+pop(st);
+push(st,stz,x);
+}
+}
+while(top>=0)
+pop(st);
+printf("\n\n");
+}
+"2.c" 65 lines, 822 characters
+u0703019@kinchen:~/s4$gcc 2.c
+u0703019@kinchen:~/s4$./a.out
+(A+b)*c
+Ab+c*
+
+u0703019@kinchen:~/s4$./a.out
+a*(b+c)-d/(e+f)
+abc+*def+/-
+
+u0703019@kinchen:~/s4$./a.out
+a+b*(c-d)/(e+f)
+abcd-*ef+/+
+
+u0703019@kinchen:~/s4$./a.out
+a+((b+c)+(d+e)*f)/g
+abc+de+f*+g/+
+
+u0703019@kinchen:~/s4$printf("%c",x);
+-bash: syntax error near unexpected token `"%c",x'
+u0703019@kinchen:~/s4$else if(x=='(')
+-bash: syntax error near unexpected token `else'
+u0703019@kinchen:~/s4$push(st,stz,x);
+-bash: syntax error near unexpected token `st,stz,x'
+u0703019@kinchen:~/s4$else if(x==')')
+-bash: syntax error near unexpected token `else'
+u0703019@kinchen:~/s4${
+>
+> bash
+> logout
+> exit
+>
+u0703019@kinchen:~/s4$

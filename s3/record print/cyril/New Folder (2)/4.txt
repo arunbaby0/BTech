@@ -1,0 +1,30 @@
+# include <stdio.h>
+#include<string.h>
+void main()
+{
+        char *p,a[20][20],t[20];
+        int n,i,j;
+        printf("Enter the no of names : ");
+        scanf("%d",&n);
+        printf("Enter the names\n");
+        for(i=0;i<n;i++)
+                scanf("%s",a[i]);
+//      p=a;
+        for(i=n-2;i>0;i--)
+        {
+//              p=a;
+                for(j=0;j<n-1;j++)
+                {
+                        if(strcmp(*(a+j),*(a+j+1))>0)
+                        {
+                                strcpy(t,*(a+j));
+                                strcpy(*(a+j),*(a+j+1));
+                                strcpy(*(a+j+1),t);
+                        }
+//                      p=&a[j];
+                }
+        }
+        printf("\nThe sorted array is \n");
+        for(i=0;i<n;i++)
+                printf("%s\n",a[i]);
+}

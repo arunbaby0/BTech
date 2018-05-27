@@ -1,0 +1,115 @@
+#include<stdio.h>
+void push(char item);
+void pop();
+int top=-1;
+char s[20];
+char item;
+int priority(char a,char b);
+main()
+{
+char s[20];
+int stacksize;
+printf("\n Enter the infix expression ");
+char string[20];
+gets(string);
+int l;
+int t;
+char ch;
+l=strlen(string);
+int i=0;
+while(i<l)
+{
+ch=string[i];
+if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+{
+printf("%c",ch);
+}
+else if(ch=='(')
+{
+push(ch);
+}
+else if(ch==')')
+{
+while(top!=-1)
+{
+pop();
+if(item!='(')
+{
+printf("%c",s[top--]);
+}
+else
+break;
+top--;
+}}
+else if(ch=='+'||ch=='-'||ch=='*'||ch=='/')
+{
+if(top==-1)
+push(ch);
+while(top!=-1)
+{
+pop();
+if(item='(')
+push(ch);
+else if(item=='+'||item=='-'||item=='*'||item=='/')
+{
+t=priority(item,s[top])
+if(t==0)
+push(item);
+else if(t==1)
+{
+printf("%c",s[top]);
+top--;
+}
+}
+else if((t==0)||(item=='('))
+break;
+}
+}
+else
+push(item);
+}
+else
+{
+while(top!=-1)
+{
+pop();
+printf("%c",item);
+}
+}
+}
+void push(char item)
+{
+if(top>=stacksize-1)
+{
+printf("\n full ");
+}
+else
+{
+s[++top]=item;
+}
+}
+void pop()
+{
+if(top==-1)
+printf("\n Empty");
+else
+{
+item=s[top--];
+}
+}
+int priority(char a,char b)
+{
+int na,nb;
+if((a=='+')||(a=='-'))
+na=1;
+else if((a=='*')||(a=='/'))
+na=2;
+if((b=='+')||(b=='-'))
+nb=1;
+else if((b=='*')||(b=='/'))
+nb=2;
+if(na>=nb)
+return 1;
+else
+return 0;
+}

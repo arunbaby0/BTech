@@ -1,0 +1,9 @@
+[Most Recent Package]
+File1=C:\vbbb\alarm\Package\setup.exe
+File2=C:\vbbb\alarm\Package\Setup.Lst
+File3=C:\vbbb\alarm\Package\alarm?*.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz
+
+

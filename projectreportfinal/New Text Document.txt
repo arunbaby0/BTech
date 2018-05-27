@@ -1,0 +1,21 @@
+#pragma ibm critical
+C only
+Description
+
+The critical pragma identifies a critical section of program code that must only be run by one process at a time.
+Syntax
+
+Read syntax diagramSkip visual syntax diagram>>-#--pragma--ibm critical--+--------+-------------------------><
+                            '-(name)-'
+
+
+where name can be used to optionally identify the critical region. Identifiers naming a critical region have external linkage.
+Note:
+
+The compiler reports an error if you try to branch into or out of a critical section. Some situations that will cause an error are:
+
+    A critical section that contains the return statement.
+    A critical section that contains goto, continue, or break statements that transfer program flow outside of the critical section.
+    A goto statement outside a critical section that transfers program flow to a label defined within a critical section.
+
+

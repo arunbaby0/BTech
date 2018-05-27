@@ -1,0 +1,29 @@
+AE November 2005 - Computer Programming (L,A,S)
+Part A
+1. List four keywords and explain their use.
+2. What is the purpose of getchar function? How it is used within a C prg?
+3. Summarize the syntactic rules associated with if-else statement.
+4. Write a C program to compute & return the factorial of a +ve integer.
+5. Summarize the distinction between a external variable definition & an external variable declaration.
+6. If an array is passed into a function and several of its elements are altered within the function, are these changes recognized in the calling portion of the program? Explain.
+7. What kind of information is represented by a pointer variable? Explain with an example.
+8. How can a one-dimensional array of pointers be used to represent a collection of strings?
+9. What is the purpose of a buffer area when working with a stream oriented data file? How is a buffer area defined?
+10. What is the purpose of the library function feof? How might the feof function be utilized  within a program that updates an unformatted datafile?				         10 * 4 = 40
+ Part B
+11. (a) Describe 2 logical operations in C. What is the purpose of each? With what type of operands can they be used? What type of expression is obtained?      					          (6)
+(b) What are the different conversion characters within the control string of a printf function? Compare with the conversion characters that are used in a 	scanf function?	                     (6)
+or
+(c) What are unary operators? Describe 6 unary operators mentioning their purposes. 	         (6)
+(d) What are the purpose of the flags that are used within the printf function? Can 2 or more flags appear consecutively within the same character group. Explain with examples.		         (6)
+12. (a) Write a C program to generate the first 100 terms of the Fibonacci series and print their sum and average.	Or
+(b) Write a C program to calculate and print the deposit amount and maturity amount for one to 5 years in a bank, which offers interest at the rate of 7.75%.
+13. (a) Each row of Pascal's triangle begins and end with 1's and each number in the interior is the sum of the numbers on either side of it in the row above. Write a C program to compute and print the first 10 rows of the Pascal's triangle.
+Or
+(b) What are subscripted variables? Write a C program to read 2 matrices and calculate their product if they are comfortable for multiplication.
+14. (a) Write an interactive C program that counts the total number of words and the total number of vowels in a given line of text.
+Or
+(b) Write a C program that determines whether a given string is a palindrome.
+15. (a) Write a C program that will read successive records from the  new data file and display each record on the screen in an approximately formatted form.	Or
+(b) What are the different ways in which data files can be categorized in C? For what kinds of applications are the unformatted data files most suited? Explain with examples.	           5*12 = 60
+

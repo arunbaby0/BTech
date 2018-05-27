@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+int a[20],i,j,m,n,t;
+printf("enter size");
+scanf("%d",&n);
+printf("enter data");
+for(i=0;i<n;i++)
+ scanf("%d",&a[i]);
+for(i=0;i<n;i++)
+{
+m=i;
+for(j=i+1;j<n;j++)
+ if(a[j]<a[m])m=j;
+t=a[i];
+a[i]=a[m];
+a[m]=t;
+}
+for(i=0;i<n;i++)
+printf("%d\t",a[i]);
+}

@@ -1,0 +1,1662 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  
+
+  
+    .writely-callout-data {
+      display: none;
+      *display: inline-block;
+      *width: 0;
+      *height: 0;
+      *overflow: hidden;
+    }
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    
+    .editor .writely-comment-yellow {
+      background-color: #FF9;
+      background-position: -240px 0;
+    }
+    .editor .writely-comment-yellow-hover {
+      background-color: #FF0;
+      background-position: -224px 0;
+    }
+    .editor .writely-comment-blue {
+      background-color: #C0D3FF;
+      background-position: -16px 0;
+    }
+    .editor .writely-comment-blue-hover {
+      background-color: #6292FE;
+      background-position: 0 0;
+    }
+    .editor .writely-comment-orange {
+      background-color: #FFDEAD;
+      background-position: -80px 0;
+    }
+    .editor .writely-comment-orange-hover {
+      background-color: #F90;
+      background-position: -64px 0;
+    }
+    .editor .writely-comment-green {
+      background-color: #99FBB3;
+      background-position: -48px 0;
+    }
+    .editor .writely-comment-green-hover {
+      background-color: #00F442;
+      background-position: -32px 0;
+    }
+    .editor .writely-comment-cyan {
+      background-color: #CFF;
+      background-position: -208px 0;
+    }
+    .editor .writely-comment-cyan-hover {
+      background-color: #0FF;
+      background-position: -192px 0;
+    }
+    .editor .writely-comment-purple {
+      background-color: #EBCCFF;
+      background-position: -144px 0;
+    }
+    .editor .writely-comment-purple-hover {
+      background-color: #90F;
+      background-position: -128px 0;
+    }
+    .editor .writely-comment-magenta {
+      background-color: #FCF;
+      background-position: -112px 0;
+    }
+    .editor .writely-comment-magenta-hover {
+      background-color: #F0F;
+      background-position: -96px 0;
+    }
+    .editor .writely-comment-red {
+      background-color: #FFCACA;
+      background-position: -176px 0;
+    }
+    .editor .writely-comment-red-hover {
+      background-color: #FF7A7A;
+      background-position: -160px 0;
+    }
+
+    .editor .writely-comment-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      padding-right: 11px;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 16px;
+      -moz-user-select: none;
+    }
+
+    .editor .writely-comment-hidden {
+      padding: 0;
+      background: none;
+    }
+    .editor .writely-comment-marker-hidden {
+      background: none;
+      padding: 0;
+      width: 0;
+    }
+    .editor .writely-comment-none {
+      opacity: .2;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+      -moz-opacity: .2;
+    }
+    .editor .writely-comment-none-hover {
+      opacity: .2;
+      filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+      -moz-opacity: .2;
+    }
+  
+
+
+  
+  .br_fix br:not(:-moz-last-node):not(:-moz-first-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+  
+  .br_fix br+br {
+    position: static !important
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    font-style: oblique;
+    background-color: #FFF1A8;
+    border: 1px solid #000;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>Interrupt Services DOS, BIOS, EMS und Mouse</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<H1>
+  <A name=kap_inhalt_interrupt></A>Interrupt Services DOS, BIOS, EMS und Mouse
+</H1>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6kxc.htm>Intel Defined CPU Exception Table (see notes)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6kz4.htm>IBM PC Hardware Interrupt Table (in order of priority)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6l0w.htm>Interrupt Table as Implemented by System BIOS/DOS</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6l2o.htm>INT 5 - Print Screen</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6l4g.htm>INT 8 - System timer</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6l68.htm>INT 9 - Keyboard Interrupt (Hardware Handler)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6l80.htm>INT 10 - Video BIOS Services</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6l9s.htm>INT 10,0 - Set Video Mode</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6lbk.htm>INT 10,1 - Set Cursor Type</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6o1c.htm>INT 10,2 - Set Cursor Position</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6o34.htm>INT 10,3 - Read Cursor Position and Size</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6o4w.htm>INT 10,4 - Read Light Pen Position</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6o6o.htm>INT 10,5 - Select Active Display Page</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6o8g.htm>INT 10,6 - Scroll Window Up</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6oa8.htm>INT 10,7 - Scroll Window Down</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6oc0.htm>INT 10,8 - Read Character and Attribute at Cursor Position</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6ods.htm>INT 10,9 - Write Character and Attribute at Cursor Position</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6ofk.htm>INT 10,A - Write Character Only at Current Cursor Position</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6ohc.htm>INT 10,B - Set Color Palette</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6r74.htm>INT 10,C - Write Graphics Pixel at Coordinate</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6r8w.htm>INT 10,D - Read Graphics Pixel at Coordinate</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6rao.htm>INT 10,E - Write Text in Teletype Mode</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6rcg.htm>INT 10,F - Get Video State</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6re8.htm>INT 10,10 - Set/Get Palette Registers (EGA/VGA)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6rg0.htm>INT 10,11 - Character Generator Routine (EGA/VGA)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6rhs.htm>INT 10,12 - Video Subsystem Configuration (EGA/VGA)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6rjk.htm>INT 10,13 - Write String (BIOS versions from 1/10/86)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6rlc.htm>INT 10,14 - Load LCD Character Font (convertible only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6rn4.htm>INT 10,15 - Return Physical Display Parms (convertible)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6ucw.htm>INT 10,1A - Video Display Combination (VGA)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6ueo.htm>INT 10,1B - Video BIOS Functionality and State Information (MCGA/VGA)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6ugg.htm>Video BIOS Dynamic Functionality State Table (MCGA/VGA)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6ui8.htm>Video BIOS Static Functionality Table</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6uk0.htm>INT 10,1C - Save/Restore Video State (VGA only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6uls.htm>INT 10,FE - Get DESQView/TopView Virtual Screen Regen Buffer</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6unk.htm>INT 10,FF - Update DESQView/TopView Virtual Screen Regen Buffer</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6upc.htm>INT 11 - BIOS Equipment Determination / BIOS Equipment Flags</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6ur4.htm>INT 12 - Memory Size Determination</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6usw.htm>INT 13 - Diskette BIOS Services</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6xio.htm>For more information see the following topics:</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6xkg.htm>INT 13,0 - Reset Disk System</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6xm8.htm>INT 13,1 - Disk Status</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6xo0.htm>INT 13,2 - Read Disk Sectors</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6xps.htm>INT 13,3 - Write Disk Sectors</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6xrk.htm>INT 13,4 - Verify Disk Sectors</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6xtc.htm>INT 13,5 - Format Disk Track</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6xv4.htm>INT 13,6 - Format Track and Set Bad Sector Flags (XT &amp; portable)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6xww.htm>INT 13,7 - Format Drive Starting at Specified Track (XT &amp; portable)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte6xyo.htm>INT 13,8 - Get Current Drive Parameters (XT &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte70og.htm>INT 13,A - Read Long Sector (XT &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte70q8.htm>INT 13,B - Write Long Sectors (XT &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte70s0.htm>INT 13,C - Seek to Cylinder (XT &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte70ts.htm>INT 13,D - Alternate Disk Reset (XT &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte70vk.htm>INT 13,E - Read Sector Buffer (XT &amp; portable only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte70xc.htm>INT 13,F - Write Sector Buffer (XT &amp; portable only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte70z4.htm>INT 13,10 - Test for Drive Ready (XT &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte710w.htm>INT 13,11 - Recalibrate Drive (XT &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte712o.htm>INT 13,12 - Controller RAM Diagnostic (XT &amp; portable only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte714g.htm>INT 13,13 - Drive Diagnostic (XT &amp; portable only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte73u8.htm>INT 13,14 - Controller Internal Diagnostic (XT &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte73w0.htm>INT 13,15 - Read DASD Type (XT BIOS from 1/10/86 &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte73xs.htm>INT 13,16 - Change of Disk Status (XT BIOS from 1/10/86 &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte73zk.htm>INT 13,17 - Set DASD Type for Format (XT BIOS from 1/10/86 &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte741c.htm>INT 13,18 - Set Media Type for Format (BIOS date specific)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7434.htm>INT 13,19 - Park Fixed Disk Heads (AT &amp; newer)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte744w.htm>INT 13,1A - Format Unit (PS/2 model 50+)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte746o.htm>INT 14 - BIOS Asynchronous Communications Services</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte748g.htm>BIOS Asynchronous Communications Services (Status)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte74a8.htm>INT 14,0 - Initialize Communications Port Parameters</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7700.htm>INT 14,1 - Send Character to Communications Port</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte771s.htm>INT 14,2 - Receive Character from Communications Port</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte773k.htm>INT 14,3 - Get Serial Port Status</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte775c.htm>INT 14,4 - Serial Port Extended Initialization (PS/2 &amp; later systems)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7774.htm>INT 14,5 - Extended Communication Port Control (PS/2 &amp; later systems)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte778w.htm>INT 15 - System BIOS Services</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte77ao.htm>For more information see the following topics:</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte77cg.htm>INT 15,0 - Turn Cassette Motor On (PC,PCjr only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte77e8.htm>INT 15,1 - Turn Cassette Motor Off (PC,PCjr only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte77g0.htm>INT 15,2 - Read Blocks from Cassette (PC,PCjr only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7a5s.htm>INT 15,3 - Write Blocks to Cassette (PC,PCjr only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7a7k.htm>INT 15,F - Format Periodic Interrupt (PS/2 only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7a9c.htm>INT 15,20 - PRINT.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7ab4.htm>INT 15,21 - Power On Self Test (POST) Error Log (PS/2 except 30)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7acw.htm>INT 15,40 - Read / Modify Profiles (convertible only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7aeo.htm>INT 15,41 - Wait on External Event (convertible only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7agg.htm>INT 15,42 - Request System Power Off (convertible only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7ai8.htm>INT 15,43 - Read System Status (convertible only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7ak0.htm>INT 15,44 - (De)activate Internal Modem Power (convertible)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7als.htm>INT 15,4F - Keyboard Intercept (BIOS date specific)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7dbk.htm>INT 15,80 - Device Open</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7ddc.htm>INT 15,81 - Device Close</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7df4.htm>INT 15,82 - Program Termination</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7dgw.htm>INT 15,83 - Event Wait</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7dio.htm>INT 15,84 - Joy-Stick Support</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7dkg.htm>INT 15,85 - System Request Key Pressed</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7dm8.htm>INT 15,86 - Elapsed Time Wait (AT and PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7do0.htm>INT 15,87 - Move Block to/from Extended Memory</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7dps.htm>INT 15,88 - Extended Memory Size Determination</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7drk.htm>INT 15,89 - Switch Processor to Protected Mode</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte275c.htm>INT 15,90 - Device Busy</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2774.htm>INT 15,91 - Interrupt Complete</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte278w.htm>INT 15,C0 - Return System Configuration Parameters (PS/2 only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte27ao.htm>INT 15,C1 - Return Extended BIOS Data Area Segment (PS/2 only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte27cg.htm>INT 15,C2 - Pointing Device BIOS Interface (PS/2 only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte27e8.htm>INT 15,C3 - Enable/Disable Watchdog Timer (PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte27g0.htm>INT 15,C4 - Programmable Option Select (PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte27hs.htm>INT 16 - Keyboard BIOS Services</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte27jk.htm>For more information, see the following topics:</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte27lc.htm>INT 16,0 - Wait for Keypress and Read Character</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2ab4.htm>INT 16,1 - Get Keyboard Status</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2acw.htm>INT 16,2 - Read Keyboard Flags</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2aeo.htm>INT 16,3 - Set Keyboard Typematic Rate (AT+)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2agg.htm>INT 16,4 - Keyboard Click Adjustment (AT+)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2ai8.htm>INT 16,5 - Keyboard Buffer Write (AT+)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2ak0.htm>INT 16,10 - Extended Wait for Keypress and Read Character (AT+)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2als.htm>INT 16,11 - Extended Get Keyboard Status (AT+)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2ank.htm>INT 16,12 - Extended Get Keyboard Status (AT+)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2apc.htm>INT 17 - Printer BIOS Services</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2ar4.htm>INT 17,0 - Print Character</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2dgw.htm>INT 17,1 - Initialize Printer Port</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2dio.htm>INT 17,2 - Read Printer Port Status</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2dkg.htm>INT 19 - Bootstrap Loader</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2dm8.htm>INT 1A - System and Real Time Clock BIOS Services</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2do0.htm>INT 1A,0 - Read System Clock Counter</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2dps.htm>INT 1A,1 - Set System Clock Counter</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2drk.htm>INT 1A,2 - Read Time From Real Time Clock (XT 286,AT,PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2dtc.htm>INT 1A,3 - Set Time on Real Time Clock (XT 286,AT,PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2dv4.htm>INT 1A,4 - Read Real Time Clock Date (XT 286,AT,PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2dww.htm>INT 1A,5 - Set Real Time Clock Date (XT 286,AT,PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2gmo.htm>INT 1A,6 - Set Real Time Clock Alarm (XT 286,AT,PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2gog.htm>INT 1A,7 - Disable Real Time Clock Alarm (XT,AT,PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2gq8.htm>INT 1A,8 - Set RTC Activated Power On Mode (convertible)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2gs0.htm>INT 1A,9 - Read RTC Alarm Time and Status (convertible,PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2gts.htm>INT 1A,A - Read System Day Counter (PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2gvk.htm>INT 1A,B - Set System Day Counter (PS/2)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2gxc.htm>INT 1A,80 - Setup Sound Multiplexer (PCjr only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2gz4.htm>INT 1B - BIOS Ctrl-Break Handler Address</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2h0w.htm>INT 1C - System Timer Tick (User Routine)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2h2o.htm>INT 1D - Video Initialization Parameter Table Vector</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2jsg.htm>INT 1E - Disk Initialization Parameter Table Vector</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2ju8.htm>INT 1F - Graphics Display Character Bit Map Table</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2jw0.htm>DOS Interrupt Summary</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2jxs.htm>INT 20 - Program Terminate</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2jzk.htm>INT 21 - DOS Function Dispatcher</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2k1c.htm>For more information, see the following topics:</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2k34.htm>INT 21,0 - Program Terminate</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2k4w.htm>INT 21,1 - Keyboard Input with Echo</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2k6o.htm>INT 21,2 - Display Output</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2k8g.htm>INT 21,3 - Wait for Auxiliary Device Input</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2my8.htm>INT 21,4 - Auxiliary Output</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2n00.htm>INT 21,5 - Printer Output</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2n1s.htm>INT 21,6 - Direct Console I/O</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2n3k.htm>INT 21,7 - Direct Console Input Without Echo</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2n5c.htm>INT 21,8 - Console Input Without Echo</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2n74.htm>INT 21,9 - Print String</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2n8w.htm>INT 21,A - Buffered Keyboard Input</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2nao.htm>INT 21,B - Check Standard Input Status</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2ncg.htm>INT 21,C - Clear Keyboard Buffer and Invoke Keyboard Function</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2ne8.htm>INT 21,D - Disk Reset</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2q40.htm>INT 21,E - Select Disk</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2q5s.htm>INT 21,F - Open a File Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2q7k.htm>INT 21,10 - Close a File Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2q9c.htm>INT 21,11 - Search for First Entry Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2qb4.htm>INT 21,12 - Search for Next Entry Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2qcw.htm>INT 21,13 - Delete File Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2qeo.htm>INT 21,14 - Sequential Read Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2qgg.htm>INT 21,15 - Sequential Write Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2qi8.htm>INT 21,16 - Create a File Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2qk0.htm>INT 21,17 - Rename a File Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2t9s.htm>INT 21,19 - Get Current Default Drive</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2tbk.htm>INT 21,1A - Set Disk Transfer Address (DTA)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2tdc.htm>INT 21,1B - Get Allocation Table Information</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2tf4.htm>INT 21,1C - Get Allocation Table Info for Specified Drive</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2tgw.htm>INT 21,1F - Get Pointer to Current Drive Parameter Table (Undocumented)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2tio.htm>INT 21,21 - Random Read Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2tkg.htm>INT 21,22 - Random Write Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2tm8.htm>INT 21,23 - Get File Size Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2to0.htm>INT 21,24 - Set Relative Record Field in FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2tps.htm>INT 21,25 - Set Interrupt Vector</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2wfk.htm>INT 21,26 - Create New Program Segment Prefix</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2whc.htm>INT 21,27 - Random Block Read Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2wj4.htm>INT 21,28 - Random Block Write Using FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2wkw.htm>INT 21,29 - Parse a Filename for FCB</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2wmo.htm>INT 21,2A - Get Date</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2wog.htm>INT 21,2B - Set Date</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2wq8.htm>INT 21,2C - Get Time</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2ws0.htm>INT 21,2D - Set Time</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2wts.htm>INT 21,2E - Set/Reset Verify Switch</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2wvk.htm>INT 21,2F - Get Disk Transfer Address (DTA)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2zlc.htm>INT 21,30 - Get DOS Version Number</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2zn4.htm>INT 21,31 - Terminate Process and Remain Resident</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2zow.htm>INT 21,32 - Get Pointer to Drive Parameter Table (Undocumented)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2zqo.htm>INT 21,33 - Get/Set System Values (Ctl-Break/Boot Drive)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2zsg.htm>INT 21,34 - Get Address to DOS Critical Flag INDOS</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2zu8.htm>INT 21,35 - Get Interrupt Vector</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2zw0.htm>INT 21,36 - Get Disk Free Space</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2zxs.htm>INT 21,37 - Get/Set Switch Character (Undocumented, DOS 2.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte2zzk.htm>INT 21,38 - Get/Set Country Dependent Information</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte301c.htm>INT 21,39 - Create Subdirectory (mkdir)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7tf4.htm>INT 21,3A - Remove Subdirectory (rmdir)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7tgw.htm>INT 21,3B - Change Current Directory (chdir)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7tio.htm>INT 21,3C - Create File Using Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7tkg.htm>INT 21,3D - Open File Using Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7tm8.htm>INT 21,3E - Close File Using Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7to0.htm>INT 21,3F - Read From File or Device Using Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7tps.htm>INT 21,40 - Write To File or Device Using Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7trk.htm>INT 21,41 - Delete File</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7ttc.htm>INT 21,42 - Move File Pointer Using Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7tv4.htm>INT 21,43 - Get/Set File Attributes</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7wkw.htm>INT 21,44 - I/O Control for Devices (IOCTL)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7wmo.htm>INT 21,44,0 / IOCTL,0 - Get Device Information</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7wog.htm>INT 21,44,1 / IOCTL,1 - Set Device Information</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7wq8.htm>Device Data Word</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7ws0.htm>INT 21,44,2 / IOCTL,2 - Read From Character Device</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7wts.htm>INT 21,44,3 / IOCTL,3 - Write to Character Device</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7wvk.htm>INT 21,44,4 / IOCTL,4 - Read from Block Device</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7wxc.htm>INT 21,44,5 / IOCTL,5 - Write to Block Device</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7wz4.htm>INT 21,44,6 / IOCTL,6 - Get Input Status</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7x0w.htm>INT 21,44,7 / IOCTL,7 - Get Output Status</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7zqo.htm>INT 21,44,8 / IOCTL,8 - Device Removable Query</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7zsg.htm>INT 21,44,9 / IOCTL,9 - Device Local or Remote Query</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7zu8.htm>INT 21,44,A / IOCTL,A - Handle Local or Remote Query</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7zw0.htm>INT 21,44,B / IOCTL,B - Set Sharing Retry Count</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7zxs.htm>INT 21,44,C / IOCTL,C - Generic I/O for Handles</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte7zzk.htm>INT 21,44,D / IOCTL,D - Generic I/O for Block Devices</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte801c.htm>INT 21,44,E / IOCTL,E - Get Logical Drive</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8034.htm>INT 21,44,F / IOCTL,F - Set Logical Drive</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte804w.htm>INT 21,45 - Duplicate File Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte806o.htm>INT 21,46 - Force Duplicate File Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte82wg.htm>INT 21,47 - Get Current Directory</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte82y8.htm>INT 21,48 - Allocate Memory</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8300.htm>INT 21,49 - Free Allocated Memory</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte831s.htm>INT 21,4A - Modify Allocated Memory Block (SETBLOCK)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte833k.htm>INT 21,4B - EXEC/Load and Execute Program</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte835c.htm>INT 21,4C - Terminate Process With Return Code</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8374.htm>INT 21,4D - Get Return Code of Sub-process</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte838w.htm>INT 21,4E - Find First Matching File</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte83ao.htm>INT 21,4F - Find Next Matching File</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte83cg.htm>INT 21,50 - Set Current Process ID (Undocumented DOS 2.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8628.htm>INT 21,51 - Get Current Process ID (Undocumented DOS 2.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8640.htm>INT 21,52 - Get Pointer to DOS "INVARS" (Undocumented)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte865s.htm>DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte867k.htm>DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte869c.htm>DOS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte86b4.htm>INT 21,53 - Generate Drive Parameter Table (Undocumented)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte86cw.htm>INT 21,54 - Get Verify Setting</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte86eo.htm>INT 21,55 - Create New PSP (Undocumented)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte86gg.htm>INT 21,56 - Rename File</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte86i8.htm>INT 21,57 - Get/Set File Date and Time Using Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8980.htm>INT 21,58 - Get/Set Memory Allocation Strategy (Undocumented, DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte899s.htm>INT 21,59 - Get Extended Error Information (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte89bk.htm>INT 21,5A - Create Temporary File (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte89dc.htm>INT 21,5B - Create File (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte89f4.htm>INT 21,5C - Lock/Unlock File Access (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte89gw.htm>INT 21,5D - Critical Error Information (Undocumented, DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte89io.htm>INT 21,5E AL=0 Get Machine Name (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte89kg.htm>INT 21,5E AL=01 Set Machine Name (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte89m8.htm>INT 21,5E AL=02 Set Printer Setup (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte89o0.htm>INT 21,5E AL=03 Get Printer Setup (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8cds.htm>INT 21,5E AL=04 Set Printer Mode (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8cfk.htm>INT 21,5E AL=05 Get Printer Mode (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8chc.htm>INT 21,5F AL=00 Get Redirection Mode (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8cj4.htm>INT 21,5F AL=01 Set Redirection Mode (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8ckw.htm>INT 21,5F AL=02 Get Redirection List Entry (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8cmo.htm>INT 21,5F AL=03 Redirect Device (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8cog.htm>INT 21,5F AL=04 Cancel Device Redirection (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8cq8.htm>INT 21,5F AL=05 Get Redirection List Extended Entry (DOS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8cs0.htm>INT 21,5F AL=06 Get Redirection List (DOS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8cts.htm>INT 21,60 - Get Fully Qualified File Name (Undocumented 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8fjk.htm>INT 21,62 - Get PSP address (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8flc.htm>INT 21,63 - Get Lead Byte Table (MSDOS 2.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8fn4.htm>INT 21,63 - Get Lead Byte Table (Asian DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8fow.htm>INT 21,64 - Set Device Driver Look Ahead (Undocumented)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8fqo.htm>INT 21,65 - Get Extended Country Information (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8fsg.htm>INT 21,66 - Get/Set Global Code Page (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8fu8.htm>INT 21,67 - Set Handle Count (DOS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8fw0.htm>INT 21,68 - Flush Buffer Using Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8fxs.htm>INT 21,69 - Get/Set Disk Serial Number (Undocumented DOS 4+)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8fzk.htm>INT 21,6C - Extended Open/Create (DOS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8ipc.htm>INT 21,F8 - Set OEM Int 21 Handler (functions F9-FF, Undocumented)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8ir4.htm>INT 22 - Program Terminate</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8isw.htm>INT 23 - Control-Break Exit Address</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8iuo.htm>INT 24 - Critical Error Handler</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8iwg.htm>INT 25 - Absolute Disk Read</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8iy8.htm>Control Block Format (DOS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8j00.htm>INT 26 - Absolute Disk Write</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8j1s.htm>Control Block Format (DOS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8j3k.htm>INT 27 - Terminate and Stay Resident</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8j5c.htm>INT 28 - DOS Idle Loop / Scheduler (Undocumented)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8lv4.htm>INT 29 - DOS Fast Character I/O (Undocumented 2.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8lww.htm>INT 2A - DOS Network Critical Section and NETBIOS</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8lyo.htm>INT 2A,0 - Network Installation Query</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8m0g.htm>INT 2A,1 - Execute NETBIOS Request With No Error Retry</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8m28.htm>INT 2A,3 - Check if Direct I/O Allowed</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8m40.htm>INT 2A,4 - Execute NETBIOS Request</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8m5s.htm>INT 2A,5 - Get Network Resource Information</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8m7k.htm>INT 2A,6 - Network Print Stream Control</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8m9c.htm>INT 2A,80 - Begin DOS Critical Section</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte8mb4.htm>INT 2A,81 - End DOS Critical Section</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3fow.htm>INT 2A,82 - End DOS Critical Sections 0 thru 7</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3fqo.htm>INT 2A,84 - Keyboard Busy Loop</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3fsg.htm>INT 2A,87 - Critical Section</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3fu8.htm>INT 2E - Execute Command Using Base Level Command Interpreter (Undocumented DOS 2.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3fw0.htm>INT 2F - DOS Multiplex Interrupt</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3fxs.htm>INT 2F,0 - DOS Multiplex Interrupt - Get Installed State</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3fzk.htm>INT 2F,1 - Multiplex Interrupt - Submit file</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3g1c.htm>INT 2F,2 - Multiplex Interrupt - Cancel file</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3g34.htm>INT 2F,3 - Multiplex Interrupt - Cancel all files</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3g4w.htm>INT 2F,4 - Multiplex Interrupt - Pause / return status</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3iuo.htm>INT 2F,5 - Multiplex Interrupt - End of Status</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3iwg.htm>INT 2F,6 - PRINT.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3iy8.htm>INT 2F,8 - DRIVER.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3j00.htm>INT 2F,2E - Setup Error Code Translation Tables (undoc.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3j1s.htm>INT 2F,80 - PRINT.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3j3k.htm>INT 33 - Mouse Function Calls</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3j5c.htm>Mouse functions can be broken down into the following classes:</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3j74.htm>INT 33,0 - Mouse Reset/Get Mouse Installed Flag</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3j8w.htm>INT 33,1 - Show Mouse Cursor</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3jao.htm>INT 33,2 - Hide Mouse Cursor</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3m0g.htm>INT 33,3 - Get Mouse Position and Button Status</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3m28.htm>INT 33,4 - Set Mouse Cursor Position</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3m40.htm>INT 33,5 - Get Mouse Button Press Information</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3m5s.htm>INT 33,6 - Get Mouse Button Release Information</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3m7k.htm>INT 33,7 - Set Mouse Horizontal Min/Max Position</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3m9c.htm>INT 33,8 - Set Mouse Vertical Min/Max Position</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3mb4.htm>INT 33,9 - Set Mouse Graphics Cursor</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3mcw.htm>INT 33,A - Set Mouse Text Cursor</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3meo.htm>INT 33,B - Read Mouse Motion Counters</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3mgg.htm>INT 33,C - Set Mouse User Defined Subroutine and Input Mask</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3p68.htm>INT 33,D - Mouse Light Pen Emulation On</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3p80.htm>INT 33,E - Mouse Light Pen Emulation Off</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3p9s.htm>INT 33,F - Set Mouse Mickey Pixel Ratio</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3pbk.htm>INT 33,10 - Mouse Conditional OFF</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3pdc.htm>INT 33,13 - Set Mouse Double Speed Threshold</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3pf4.htm>INT 33,14 - Swap Interrupt Subroutines</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3pgw.htm>INT 33,15 - Get Mouse Driver State and Memory Requirements</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3pio.htm>INT 33,16 - Save Mouse Driver State</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3pkg.htm>INT 33,17 - Restore Mouse Driver State</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3pm8.htm>INT 33,18 - Set alternate subroutine call mask and address</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3sc0.htm>INT 33,19 - Get User Alternate Interrupt Address</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3sds.htm>INT 33,1A - Set Mouse Sensitivity</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3sfk.htm>INT 33,1B - Get Mouse Sensitivity</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3shc.htm>INT 33,1C - Set Mouse Interrupt Rate (InPort only)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3sj4.htm>INT 33,1D - Set Mouse CRT Page</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3skw.htm>INT 33,1E - Get Mouse CRT Page</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3smo.htm>INT 33,1F - Disable Mouse Driver</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3sog.htm>INT 33,20 - Enable Mouse Driver</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3sq8.htm>INT 33,21 - Reset Mouse Software</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3ss0.htm>INT 33,22 - Set Language for Messages</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3vhs.htm>INT 33,23 - Get Language Number</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3vjk.htm>INT 33,24 - Get Driver Version, Mouse Type &amp; IRQ Number</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3vlc.htm>INT 4A - RTC Alarm Handler Vector</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3vn4.htm>INT 67 - Expanded Memory Specification</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3vow.htm>INT 67,40 - Get EMM Status (LIM EMS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3vqo.htm>INT 67,41 - Get Page Frame Base Address (LIM EMS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3vsg.htm>INT 67,42 - Get Page Counts (LIM EMS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3vu8.htm>INT 67,43 - Get Handle and Allocate Pages (LIM EMS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3vw0.htm>INT 67,44 - Map Logical Page Into Physical Page Window (LIM EMS)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3vxs.htm>INT 67,45 - Release Handle and Memory Pages (LIM EMS)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3ynk.htm>INT 67,46 - Get EMM Version (LIM EMS)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3ypc.htm>INT 67,47 - Save Page Map Context (LIM EMS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3yr4.htm>INT 67,48 - Restore Page Map Context (LIM EMS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3ysw.htm>INT 67,49 - Get I/O Port Addresses (LIM EMS ¾ 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3yuo.htm>INT 67,4A - Get Logical to Physical Page Mapping (LIM EMS ¾ 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3ywg.htm>INT 67,4B - Get Handle Count (LIM EMS)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3yy8.htm>INT 67,4C - Get Page Count for Handle</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3z00.htm>INT 67,4D - Get Page Count for All Handles (LIM EMS)</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3z1s.htm>INT 67,4E - Get/Set Page Map Context (LIM EMS 3.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte3z3k.htm>INT 67,4F - Get/Set Partial Page Map (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte41tc.htm>INT 67,50 - Map/Unmap Multiple Handle Pages (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte41v4.htm>INT 67,51 - Reallocate Pages (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte41ww.htm>INT 67,52 - Get/Set Handle Attributes</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte41yo.htm>INT 67,53 Get/Set Handle Name</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte420g.htm>INT 67,54 - Get Handle Directory (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte4228.htm>INT 67,55 - Alter Page Map and Jump (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte4240.htm>INT 67,56 - Alter Page Map and Call (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte425s.htm>INT 67,57 - Move/Exchange Memory Region (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte427k.htm>INT 67,58 - Get Mappable Physical Address Array (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte429c.htm>INT 67,59 - Get Expanded Memory Hardware Information (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte44z4.htm>INT 67,5A - Allocate Standard/Raw Pages (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte450w.htm>INT 67,5B - Alternate Map Register Set (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte452o.htm>INT 67,5C - Prepare Expanded Memory for Warm Boot (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte454g.htm>INT 67,5D - Enable/Disable OS Functions (LIM EMS 4.</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte4568.htm>INT 67,60 - LIM EMS Get Physical Window Array</A>
+</P>
+<P>
+  <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/hardware/interrupts/inte4580.htm>INT 70 - Real Time Clock Interrupt (XT 286,AT,PS/2)</A>
+</P>
+<HR>
+<TABLE border=0 class=zeroBorder cols=3 width=100%>
+  <TBODY>
+  <TR>
+    <TD width=33%>
+      Zurück zum <A href=http://www.htl-steyr.ac.at/~morg/pcinfo/index.html>PC Info</A> .
+    </TD>
+    <TD align=middle width=33%>
+      <A href=mailto:Roger.Morgan@htl-steyr.ac.at>Roger Morgan</A> / 1997
+    </TD>
+    <TD align=right width=33%>
+      <FONT size=1>L.Änderung 01. January 2003 </FONT>
+    </TD>
+  </TR>
+  </TBODY>
+</TABLE>
+<br></body>
+</html>

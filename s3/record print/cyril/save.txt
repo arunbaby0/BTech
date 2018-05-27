@@ -1,0 +1,46 @@
+#include<stdio.h>
+main()
+{
+FILE *a;
+char c;
+//printf("\n Enter to file ");
+//printf("\n Please enter a space after the string\n\n ");
+/*a=fopen("INPUT","w");
+while((c=getchar())!='\n')
+putc(c,a);
+fclose(a);*/
+FILE *b;
+b=fopen("INPUT","r");
+char temp[10];
+printf("\n Enter a string to search in file input");
+scanf("%s",temp);
+char word[10];
+int flag=0;
+int i=0;
+while((c=getc(b))!=EOF)
+{
+if(c!=' ')
+{
+word[i]=c;
+i++;
+}
+
+if(c==' ')
+{
+word[i]='\0';
+if(strcmp(word,temp)==0)
+{
+flag=1;
+printf(" Word found \n");
+}
+i=0;
+}
+}
+if(flag==0)
+printf("\n Word not found \n");
+
+
+
+
+fclose(b);
+}

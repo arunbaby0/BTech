@@ -1,0 +1,13 @@
+#include<stdio.h>
+main()
+{
+int *a,*b,c,d,*t;
+a=&c;
+b=&d;
+printf("enter a,b in order");
+scanf("%d%d",a,b);
+t=a;
+a=b;
+b=t;
+printf("\na=%d\nb=%d\n",*a,*b);
+}

@@ -1,0 +1,57 @@
+#include<stdio.h>
+
+struct library
+{
+        char bname[10];
+        char author[10];
+        int copy;
+        int issued;
+};
+
+void main()
+{
+int n,i,j,k,ch,y,ser;
+struct library s[10];
+printf("Enter the number of books\n");
+scanf("%d",&n);
+printf("Enter the details of %d books\n",n);
+for(i=0;i<n;i++)
+   {
+          printf("Enter name of book\n");
+          scanf("%s",s[i].bname);
+          printf("Enter author name\n");
+          scanf("%s",s[i].author);
+          printf("Enter no: of copies\n");
+          scanf("%d",&s[i].copy);
+          printf("Enter no: of copies issued\n");
+          scanf("%d",&s[i].issued);
+   }
+ printf("Available books and no: of copies\n");
+for(i=1;i<=n;i++)
+ if(s[i-1].copy-s[i-1].issued>0)
+       printf("%d: %s  %d copies\n",i,s[i-1].bname,s[i-1].copy-s[i-1].issued);
+ printf("Enter the serial no: of the book \n");
+ scanf("%d",&ser);
+ printf("Enter 1-issue 2-return 3-reissue\n");
+ scanf("%d",&ch);
+ if(ch==1)
+        {
+                s[ser-1].issued++;
+                printf("The book  issued\n");
+        }
+        else if(ch==2)
+        {
+                s[ser-1].issued--;
+                printf("The book  returned\n");
+
+    }
+        else if(ch==3)
+                printf("The book  reissued\n");
+        else
+        printf("Invalid choice\n");
+        printf("Available books and no: of copies\n");
+        for(i=1;i<=n;i++)
+        printf("%d:%s  %d copies\n",i,s[i-1].bname,s[i-1].copy-s[i-1].issued);
+
+}
+

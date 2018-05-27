@@ -1,0 +1,385 @@
+Experiment No: 9
+Date: 30-Sep-2009
+
+ITERATIVE SERVER
+
+PROBLEM DEFINITION:
+
+Program to implement an iterative server providing multiple services according to the request made by the client. The services are:
+a) Echo service
+b) Date and time service
+
+THEORETICAL BACKGROUND:
+  
+Iterative Server is the simplest form of server where a server process serves one client and after completing first request then it takes request from another client. Meanwhile another client keeps waiting.
+The system calls for establishing a connection are somewhat different for the client and the server, but both involve the basic construct of a socket. The two processes each establish their own sockets.
+The steps involved in establishing a socket on the client side are as follows:
+1.	Create a socket 
+2.	Connect the socket to the address of the server 
+3.	Send and receive data. 
+The steps involved in establishing a socket on the server side are as follows:
+1.	Create a socket 
+2.	Bind the socket to an address.
+3.	Listen for connections.
+4.	Accept a connection with the accept() system call. This call typically blocks until a client connects with the server.
+5.	Send and receive data.
+Following is the diagram showing complete Client and Server interaction:
+ 
+
+PSEUDOCODE:
+
+Server
+Step 1: Start 
+Step 2: Create the server Socket and listen for a client request to a particular port number.
+            // ServerSocket ss;
+            // ss=new ServerSocket(5051);
+Step 3: Get choice from client using BufferedReader
+            // b=new BufferedReader(new InputStreamReader(c.getInputStream( )));
+            // msg=b.readLine( );
+Step 4: (a) If choice=1, read data to be echoed and echo it to client using PrintWriter
+                  // p=new PrintWriter(c.getOutputStream( ),true);
+(b) If choice=2, get the present date, time and pass it to client
+// Date date=new Date( );
+// String service2=date.toString( );
+(c) Else print wrong choice
+Step 5: Stop   
+
+Client
+Step 1: Start 
+Step 2: Create the Socket 
+            //Socket c;
+Step 3: Send request to the server. For this, we need to specify the IP address of the server along with the port number.
+            // c = new Socket("localhost", 5051);
+Step 3: Read choice of service required using BufferedReader and pass the choice to server using PrintWriter
+            // BufferedReader b1= new BufferedReader(new InputStreamReader(System.in));
+            // PrintWriter p=new PrintWriter(c.getOutputStream( ),true);
+Step 4: (a) If choice=1, read data, pass it to server and read echoed data from server using BufferedReader
+                  // BufferedReader b2= new BufferedReader(new InputStreamReader(c.getInputStream( )));
+(b)	If choice=2, read the present date, time from server using BufferedReader
+// BufferedReader b2= new BufferedReader(new InputStreamReader(c.getInputStream( )));
+Step 5: Stop   
+
+PROGRAM DEVELOPMENT:
+
+Server
+
+import java.io.*;
+import java.net.*;
+import java.util.*;
+public class Iserver
+{
+ public static void main(String args[])
+  {
+Socket c;
+ServerSocket s;
+BufferedReader b1,b2;
+PrintWriter p1,p2;
+String str1,str2,str3;
+try
+    {
+  
+
+ s=new ServerSocket(8000); 
+while(true)
+   {
+  c=s.accept();
+
+  b1=new BufferedReader(new InputStreamReader(c.getInputStream()));
+  p1=new PrintWriter(c.getOutputStream(),true);
+  String str=b1.readLine();
+   System.out.println("Selected choice is"+str); 
+if(str.equals("1"))
+   {
+
+p1.println("Connected with server...Enter data to echo");
+str1=b1.readLine();
+p1.println(str1);
+    
+}
+ else if(str.equals("2"))
+   {
+Date date=new Date();
+p1.println(date.toString());
+   
+    }
+  else
+   {
+p1.println("Error");
+    }
+
+
+c.close();
+  }
+
+}
+  catch(Exception e)
+   {
+    }
+  }
+}
+  
+  
+
+
+
+Client
+
+import java.io.*;
+import java.net.*;
+public class Iclient
+{
+ public static void main(String args[])
+  {
+Socket sc;   
+try
+    {
+     
+     sc=new Socket("localhost",8000);
+
+BufferedReader b1=new BufferedReader(new InputStreamReader(System.in));
+BufferedReader b2=new BufferedReader(new InputStreamReader(sc.getInputStream()));
+PrintWriter p=new PrintWriter(sc.getOutputStream(),true);
+  
+  System.out.println("1.Echo Server");
+  System.out.println("2.Date and Time Service");
+  System.out.println("Enter Your Choice");
+  String st=b1.readLine();
+   p.println(st);
+  if(st.equals("1"))
+     {
+      String s1=b2.readLine();  
+	System.out.println(s1);
+      String s2=b1.readLine();
+      p.println(s2);
+        s1=b2.readLine();
+       System.out.println(s1);
+      }
+   else if(st.equals("2"))
+     {
+       String s3=b2.readLine();
+       System.out.println("Current date and Time is:"+s3);
+      }
+   else
+     {
+       String s4=b2.readLine();
+        System.out.println(s4);
+    }
+ 
+ 
+  }
+  catch(Exception e)
+   {
+    }
+  }
+}
+
+
+
+TESTING STRATEGIES:
+
+Test case 1:
+
+ When first client requested for echo service to the server
+
+When second client requested for date and time service to the server
+
+SUMMARY OF RESULTS:
+
+Case 1:
+
+
+
+
+ 
+
+
+When first client requested for echo service to the server
+
+ 
+
+
+
+
+
+
+When second client requested for date and time service to the server
+
+ 
+
+
+CONCLUSION:
+
+The program was to implement an iterative server providing multiple services according to the request made by the client. Algorithm was developed and code was written. Test cases were then given and the results were verified.
+
+
+
+
+
+
+
+
+
+Experiment No: 10
+Date: 30-Sep-2009
+
+REMOTE METHOD INVOCATION
+
+PROBLEM DEFINITION:
+
+Program to implement addition using RMI system which allows an object running in one JVM to invoke methods on an object running in another JVM.
+
+THEORETICAL BACKGROUND:
+
+      The Java Remote Method Invocation (RMI) system allows an object running in one Java virtual machine (JVM) to invoke methods on an object running in another JVM. RMI provides for remote communication between programs written in the Java programming language. Java RMI is a Java application programming interface for performing the object equivalent of remote procedure calls.
+
+RMI structure
+
+A client is supplied with the interface of methods available from the remote server and all the implementation is left to the server side. The details of implementing the remote methods are abstracted from the client software. The client and server of an RMI system are connected through a layered connection, operated by the RMI subsystem of the two virtual machines involved.
+ 
+
+The stubs and skeletons provide additional abstraction for the Java developer, once an RMI system is established. The code may be written as if all methods and objects are local to the client. The remote reference layer handles reference variables to remote objects, using the Transport layer's TCP/IP connection to the server. A client requests a reference to an object from the server using the stub on the client side. The server gets the request from a skeleton on the server side. Between the two is the remote reference layer, which negotiates the requests by converting objects into portable form across the network. This conversion is called marshalling.
+
+Steps in implementing an RMI system
+
+1) Define and compile the four files needed for the system, namely:-
+	(i) ServerIntf.java:- defines the remote interface provided by the server. All the remote interfaces must extend the Remote interface, which is part of java.rmi
+	(ii) ServerImpl.java, implements the remote interface. All remote methods must extend the UniCastRemoteObject, which provides the functionality that is needed to make objects available from remote machines
+	(iii) Server.java:- contains the main program for the server machine. Its primary function is to update the RMI registry on that machine. This is done by using the rebind() method of the naming class
+	(iv) Client.java, implements the client side of this distributed application. The program invokes the lookup() method in the naming class
+
+2) Generate the Stub and Skeleton
+
+•	Stub is a java object that resides on the client machine. Its function is to present the same interfaces as the remote server
+•	Skeleton is a java object that resides on the server machine
+
+To generate the stubs and the skeleton, we use the RMI compiler, which is invoked from the command line
+
+rmic ServerImpl
+
+3) Install the files on the client and the server machines
+
+Copy the client class, Implementation stub class and the Interface class on the client machine and copy the Interface class, Implementation class, Implementation skeleton class, Implementation stub class and Server class on the server machine.
+
+4) Start the rmi registry on the server machine
+
+start rmiregistry
+
+5) Start the server
+
+java Server
+
+6) Start the client
+
+java Client
+
+PSEUDOCODE:
+
+Step 1: Start
+Step 2: Define the client which takes the numbers as command line arguments.
+Step 3: Server url=”rmi://+127.0.0.1+”/AddServer”, call Naming.lookup().
+Step 4: Create an object of server interface class.
+Step 5: Convert the numbers specified as arguments to integer from string.
+Step 6: Call the add function of server interface class passing the numbers as arguments.
+Step 7: Declare the add function in the server interface.
+Step 8: Define the add function in the server implementation class.
+Step 9: Function add:- return the sum of numbers passed as arguments.
+Step 10: Define the server which creates an object of server implementation, call Naming.rebind(). 
+Step 11: Print the sum of the two numbers.
+Step 12: Stop.
+
+PROGRAM DEVELOPMENT:
+
+Server
+
+import java.net.*;
+import java.rmi.*;
+
+public class Server
+{
+ public static void main(String arg[])
+ {
+  try
+  {
+   ServerImpl si = new ServerImpl( );
+   Naming.rebind("Server",si);
+  }
+  catch(Exception e){}
+ }
+}
+
+Server Implementation
+
+import java.rmi.*;
+import java.rmi.server.*;
+
+public class ServerImpl extends UnicastRemoteObject implements ServerIntf
+{
+ public ServerImpl( ) throws RemoteException { }
+ public int add(int n1,int n2)throws RemoteException
+ {
+  return n1+n2;
+ }
+}
+
+
+Server Interface
+
+import java.rmi.*;
+
+public interface ServerIntf extends Remote
+{
+ int add(int d1,int d2)throws RemoteException;
+}
+
+Client
+
+import java.rmi.*;
+
+public class Client
+{
+
+ public static void main(String args[])
+ {
+  String serverName;
+
+  try
+  {
+   serverName = "127.0.0.1";        		
+   String ServerURL="rmi://"+serverName+"/Server";
+   ServerIntf ServerIntf = (ServerIntf)Naming.lookup(ServerURL);						
+   int n1 = Integer.parseInt(args[0]);			
+   int n2 = Integer.parseInt(args[1]);
+   System.out.println("The sum of two numbers is "+ServerIntf.add(n1,n2));
+  }
+
+  catch(Exception e){}
+ }
+
+}
+
+TESTING STRATEGIES:
+
+Test case 1:
+
+Perform addition of two integer values 20 and 5
+
+
+
+
+
+SUMMARY OF RESULTS:
+
+Case 1:
+Perform addition of two integer values 20 and 5
+
+ 
+
+
+ 
+
+ 
+
+CONCLUSION:
+
+The program was to implement addition using RMI system which allows an object running in one JVM to invoke methods on an object running in another JVM. Algorithm was developed and code was written. Test cases were then given and the results were verified.
+

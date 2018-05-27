@@ -1,0 +1,18 @@
+#include<string.h>
+#include<stdio.h>
+main()
+{
+FILE *f1;
+char c;
+int c1=0,w=1,l=0;
+f1=fopen("txt.dat","r");
+while((c=getc(f1))!=EOF)
+{
+
+if(c=='\n')
+l++;
+else if(c==' ')w++;
+else c1++;
+}
+printf("lines=%d\nwords=%d\ncharecters=%d\n",l,w,c1);
+}

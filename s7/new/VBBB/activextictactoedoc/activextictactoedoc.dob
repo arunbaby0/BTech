@@ -1,0 +1,124 @@
+VERSION 5.00
+Begin VB.UserDocument activextictactoedoc 
+   AutoRedraw      =   -1  'True
+   ClientHeight    =   2865
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   4800
+   HScrollSmallChange=   225
+   ScaleHeight     =   2865
+   ScaleWidth      =   4800
+   VScrollSmallChange=   225
+   Begin VB.CommandButton Command 
+      Caption         =   "o"
+      Height          =   495
+      Index           =   8
+      Left            =   3360
+      TabIndex        =   8
+      Top             =   1920
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command 
+      Height          =   495
+      Index           =   7
+      Left            =   3360
+      TabIndex        =   7
+      Top             =   1080
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command 
+      Height          =   495
+      Index           =   6
+      Left            =   3360
+      TabIndex        =   6
+      Top             =   360
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command 
+      Height          =   495
+      Index           =   5
+      Left            =   1800
+      TabIndex        =   5
+      Top             =   1920
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command 
+      Caption         =   "o"
+      Height          =   495
+      Index           =   4
+      Left            =   1800
+      TabIndex        =   4
+      Top             =   1080
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command 
+      Height          =   495
+      Index           =   3
+      Left            =   1800
+      TabIndex        =   3
+      Top             =   360
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command 
+      Height          =   495
+      Index           =   2
+      Left            =   240
+      TabIndex        =   2
+      Top             =   1920
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command 
+      Height          =   495
+      Index           =   1
+      Left            =   240
+      TabIndex        =   1
+      Top             =   1080
+      Width           =   1215
+   End
+   Begin VB.CommandButton Command 
+      Caption         =   "x"
+      Height          =   495
+      Index           =   0
+      Left            =   240
+      TabIndex        =   0
+      Top             =   360
+      Width           =   1215
+   End
+End
+Attribute VB_Name = "activextictactoedoc"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+Dim blnXFlag As Boolean
+
+Private Sub Command_Click(Index As Integer)
+    If blnXFlag Then
+        Command(Index).Caption = "x"
+    Else
+        Command(Index).Caption = "o"
+    End If
+    blnXFlag = Not blnXFlag
+    PropertyChanged
+End Sub
+
+Private Sub UserDocument_Initialize()
+    blnXFlag = True
+End Sub
+
+Private Sub UserDocument_ReadProperties(PropBag As PropertyBag)
+    Dim intLoopIndex As Integer
+    
+    For intLoopIndex = 0 To 8
+        Command(intLoopIndex).Caption = PropBag.ReadProperty("Command(" & Str(intLoopIndex) & ")")
+    Next intLoopIndex
+End Sub
+
+Private Sub UserDocument_WriteProperties(PropBag As PropertyBag)
+    Dim intLoopIndex As Integer
+    
+    For intLoopIndex = 0 To 8
+        PropBag.WriteProperty "Command(" & Str(intLoopIndex) & ")", Command(intLoopIndex).Caption
+    Next intLoopIndex
+End Sub

@@ -1,0 +1,195 @@
+
+Matrix Multiplication: the "Hello World" of parallel programming.
+
+In an effort to learn parallel programming with a NVIDIA GPU, I am documenting my findings as I attempt to migrate from a serial cpu matrix multiplication implementation to a highly parallel algorithm on a GPU using CUDA.
+
+For simplicity sake, we will be dealing with NxN (square) matrices. All of the following will work for other dimensions, but this keeps things cleaner and allows us to focus on the important aspects.
+
+Lets take a look at an example of matrix multiplication: 
+
+mA  mB  mC 
+A B 
+C D 
+ *  E F 
+G H 
+ =  A*E+B*G A*F+B*H 
+C*E+D*G C*F+D*H 
+ 
+
+Here is an example of the matrix multiplication algorithm:
+
+//Matrix Multiplication for NxN matrices
+for(int r=0; r<N; r++) {
+  for(int c=0; c<N; c++) {
+  
+    float v = 0.0f;
+    for(int i=0; i<N; i++) {
+      v += mA[r * N + i] * mB[i * N + c];
+    }
+    
+    mC[r * N + c] = v;
+  }
+}
+One thing about you will notice about the code above is that it has three nested for loops! This means that the running time of this algorithm is O(n^3). This is not very good for matrices of any decent size. A quick test with this code on an Intel i7 1.7Ghz CPU shows that the multiplication takes over 9 seconds when N=1024. How can we make this faster?
+
+The subtle, but crucial, thing to notice is that each value of the result can be calculated independently. That is to say mC(0,0) can be determined without needing any information from mC(0,1), mC(1,0) or mC(1,1). This property is perfect for parallel processing. If we were on a machine with multiple cpus, we could have each cpu calculate some portion of mC and have the total operation completed in less time than it took our single cpu example. Todays consumer cpus have 2-4 cores, so let us investigate the multithreaded approach by setting up a pool of worker threads in which each thread calculates a portion of the mC.
+
+Here is a sample multithreaded implementation:
+
+DWORD WINAPI threadFunc(LPVOID pParam) {
+    while(1) {
+        WaitForSingleObject(m, INFINITE);
+        int y = next_y;
+        int x = next_x;
+        next_x++;
+        if(next_x>=n) {
+            next_y++;
+            next_x=0;
+        }        
+        ReleaseMutex(m);
+        
+        if(y>=n)
+            break;
+            
+        float v = 0.0f;
+        
+        for(int i=0; i<n; i++)
+            v += a[y * n + i] * b[i * n + x];
+
+        c[y * n + x] = v;
+    }
+    return 0;
+}
+
+void matrixMultiply() {
+    int i;
+    HANDLE h[NUM_THREADS];
+
+    m = CreateMutex(NULL, FALSE, NULL);
+    next_x = 0;
+    next_y = 0;
+    
+    for(i=0; i<NUM_THREADS; i++)
+        h[i] = CreateThread(NULL, 0, threadFunc, NULL, 0, NULL);
+    
+    WaitForMultipleObjects(NUM_THREADS, h, TRUE, INFINITE);
+    
+    for(i=0; i<NUM_THREADS; i++)
+        CloseHandle(h[i]);
+        
+    CloseHandle(m);
+}
+A quick test shows a running time of 3.74 seconds for N=1024 using 5 threads. A pretty solid improvement!
+
+In this multithreaded approach, the threads work collabaratively together to calculate portions of the result. Each thread is takes the next element of mC that has not been calculated and then works on it. When a thread notices that there are no unanswered elements left, it terminates. The originating process simply waits until all the threads have stopped at which point, the matrix multiplication is complete and mC is completely populated.
+
+Imagine if we take this threading idea to the extreme and have 1 thread calculate 1 element of mC. We would need N*N threads to accomplish this and most likely your operating system would not appreciate this as it would spent most of its time switching between them instead of actually getting any work done. What if there was a processor designed to handle thousands of threads? Interestingly the GPU has evolved into such a device. Initially designed for graphics processing, the GPU has been noticed by quite a few as an amazing number cruncher. We will be using CUDA to interface with our NVIDIA GPU (GTX 460m 1.5GB DDR5). Here is an example of our matrix multiplication using CUDA:
+
+__global__ void kernelFunc(float* ad, float* bd, float* cd, int n) {
+    int x = (blockIdx.x * blockDim.x) + threadIdx.x;
+    int y = (blockIdx.y * blockDim.y) + threadIdx.y;
+    
+    if(x < n && y < n) {   
+        float v = 0.0f;
+        for(int i=0; i<n; i++)
+            v += ad[y * n + i] * bd[i * n + x];
+        cd[y * n + x] = v;
+    }
+}
+
+void matrixMultiply() {
+    float* ad;
+    float* bd;
+    float* cd;
+    
+    cudaMalloc((void**)&ad, n * n * sizeof(float));
+    cudaMalloc((void**)&bd, n * n * sizeof(float));
+    cudaMalloc((void**)&cd, n * n * sizeof(float));
+    
+    cudaMemcpy(ad, a, n * n * sizeof(float), cudaMemcpyHostToDevice);
+    cudaMemcpy(bd, b, n * n * sizeof(float), cudaMemcpyHostToDevice);
+
+    dim3 block(32, 32);           
+    dim3 grid((n+31)/32, (n+31)/32);
+    
+    kernelFunc<<<grid, block>>>(ad, bd, cd, n);
+
+    cudaMemcpy(c, cd, n * n * sizeof(float), cudaMemcpyDeviceToHost);
+    
+    cudaFree(ad);
+    cudaFree(bd);
+    cudaFree(cd);
+}Notice the cudaMalloc and cudaMemcpy functions. What we are doing here is allocating space on the video card itself and then copying the matrix data from the CPU side to the GPU side. The kernelFunc is code the code that is executed on the GPU and represents a single threads logic. The grid and block numbers determine how many threads to spawn on the GPU. Using this code and running our same test with N=1024, the runtime is 0.24 seconds. Wow that is fast compared to our other examples!
+
+Here is a graph comparing the runtimes between our three implementations for multiplication between two NxN matrices where N goes from 8 to 2096 in increments of 8: 
+
+ 
+Notice how the single threaded cpu starts curving up sharply as N gets larger. This shows that if N gets fairly large, you will be waiting longer and longer for your answer. The threaded one curves up much shallower as N increases and shows a good improvement over the single threaded version. An interesting thing to notice is the threaded one actually runs slower than the single threaded one for smaller N. This is because threads are heavy items and the OS must spend time managing them. In the case where N is small, the management of the threads out weighs the performance benefits. Then there is the GPU implementation. Wow! It is almost flat across all N sizes! Can we make the GPU even break a sweat?
+
+
+The 10240x10240 Matrix Test
+
+Your first question is probably "Why 10240x 10240?" It is simple really. That is pretty close to the largest matrix I can allocate in my GPU's RAM. Here is the math:
+
+1 float = 4 bytes
+
+10240x10240 = 104857600 floats = 419430400 bytes per matrix
+
+We need 3 matrices (mA, mB and mC) so 3 * 419430400 = slightly over 1.2GB and my GPU has 1.5GB of RAM. 
+
+Here are the runtimes for N=10240
+
+Code  Runtime in Seconds  Runtime in Minutes  Runtime in Hours 
+CPU  24881.302 414.683 6.911 
+CPU Threaded  7801.511 130.025 2.167 
+GPU  134.222 2.237 0.037 
+GPU Optimized 57.002 0.950 0.015 
+
+The cpu version took almost 7 hours to complete! Compare this to the optimized gpu version (more on this in a bit) which completed the same task in under 1 minute! That is a roughly 436 times faster! Not too shabby for a laptop video card. Just imagine what a couple desktop versions of these cards could do.
+
+Now for an explanation of the optimization made to our original GPU algorithm. As it turns out there are few different types of RAM on a video card. For this discussion we will be talking about Global and Shared. Global memory is the physical RAM chips that are on your video card. This RAM is accessible by all threads on the card. Since this RAM is outside the physical GPU, you incur a latency when accessing it. Shared memory is much much smaller in capacity and is located inside the GPU chip itself (much like cache on a cpu) and the latency to this memory is much much smaller. So what we did is took advantage of the fact that the matrix multiplication algorithm references the same elements several times and effectively cache values in Shared memory. The details are a bit complex but what happens is instead of having three different threads grab the same value from Global memory, we have one thread read it from Global memory and the other threads read that value from Shared memory thus reducing the amount of Global memory accesses. As we can see from the chart above, that really paid off by cutting the running time in half!
+
+Here is what the optimized gpu kernel looks like:
+
+__global__ void kernelFunc(float* ad, float* bd, float* cd, int n) {
+    __shared__ float as[32][32];
+    __shared__ float bs[32][32];
+
+    int tx = threadIdx.x;
+    int ty = threadIdx.y;
+    
+    int x = (blockIdx.x * blockDim.x) + tx;
+    int y = (blockIdx.y * blockDim.y) + ty;
+        
+    float v = 0.0f;
+    
+    int yn = y * n;
+    int s = n / 32;
+    for(int m=0; m<s; m++) {
+        int m32 = m * 32;
+        as[ty][tx] = ad[yn + (m32 + tx)];
+        bs[ty][tx] = bd[(m32 + ty) * n + x];
+        
+        __syncthreads();
+        
+        for(int i=0; i<32; i++) {
+            v += as[ty][i] * bs[i][tx];
+        }
+        
+        __syncthreads();
+    }
+    
+    cd[yn + x] = v;    
+}
+
+
+Source Code:
+
+CPU
+
+CPU Multithreaded
+
+GPU
+
+GPU Optimized
+ 
